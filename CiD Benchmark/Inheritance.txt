@@ -1,0 +1,6 @@
+Callback incompatibilities
+Method getContentTransitionManager()Landroid/transition/TransitionManager; in  class 22:Llu/uni/snt/apicompatibility_inheritance/MainActivity;.getContentTransitionManager()Landroid/transition/TransitionManager; not found for API <= 19
+
+API incompatibilities
+
+Method Landroid/transition/TransitionManager;.go(Landroid/transition/Scene;)V in class 22:Llu/uni/snt/apicompatibility_inheritance/MainActivity;.checkContentTransition()V not found for API <= 18

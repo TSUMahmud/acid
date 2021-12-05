@@ -1,0 +1,29 @@
+Callback incompatibilities
+
+Method onShowFileChooser(Landroid/webkit/WebView;Landroid/webkit/ValueCallback;Landroid/webkit/WebChromeClient$FileChooserParams;)Z in  class 22:Lme/zeeroooo/materialfb/Activities/MainActivity$7;.onShowFileChooser(Landroid/webkit/WebView;Landroid/webkit/ValueCallback;Landroid/webkit/WebChromeClient$FileChooserParams;)Z not found for API 19
+Method openFileChooser(Landroid/webkit/ValueCallback;Ljava/lang/String;Ljava/lang/String;)V in  class 22:Lme/zeeroooo/materialfb/Activities/MainActivity$7;.openFileChooser(Landroid/webkit/ValueCallback;Ljava/lang/String;Ljava/lang/String;)V not found for API <= 27
+Method onStartJob(Landroid/app/job/JobParameters;)Z in  class 22:Lme/zeeroooo/materialfb/Notifications/NotificationsJS;.onStartJob(Landroid/app/job/JobParameters;)Z not found for API <= 19
+Method onStopJob(Landroid/app/job/JobParameters;)Z in  class 22:Lme/zeeroooo/materialfb/Notifications/NotificationsJS;.onStopJob(Landroid/app/job/JobParameters;)Z not found for API <= 19
+Method dispatchNestedFling(FFZ)Z in  class 22:Lme/zeeroooo/materialfb/WebView/MFBWebView;.dispatchNestedFling(FFZ)Z not found for API <= 19
+Method dispatchNestedPreFling(FF)Z in  class 22:Lme/zeeroooo/materialfb/WebView/MFBWebView;.dispatchNestedPreFling(FF)Z not found for API <= 19
+Method dispatchNestedPreScroll(II[I[I)Z in  class 22:Lme/zeeroooo/materialfb/WebView/MFBWebView;.dispatchNestedPreScroll(II[I[I)Z not found for API <= 19
+Method dispatchNestedScroll(IIII[I)Z in  class 22:Lme/zeeroooo/materialfb/WebView/MFBWebView;.dispatchNestedScroll(IIII[I)Z not found for API <= 19
+Method isNestedScrollingEnabled()Z in  class 22:Lme/zeeroooo/materialfb/WebView/MFBWebView;.isNestedScrollingEnabled()Z not found for API <= 19
+Method setNestedScrollingEnabled(Z)V in  class 22:Lme/zeeroooo/materialfb/WebView/MFBWebView;.setNestedScrollingEnabled(Z)V not found for API <= 19
+Method startNestedScroll(I)Z in  class 22:Lme/zeeroooo/materialfb/WebView/MFBWebView;.startNestedScroll(I)Z not found for API <= 19
+Method stopNestedScroll()V in  class 22:Lme/zeeroooo/materialfb/WebView/MFBWebView;.stopNestedScroll()V not found for API <= 19
+
+Invocation incompatibilities
+
+Method Landroid/view/ViewAnimationUtils;.createCircularReveal(Landroid/view/View;IIFF)Landroid/animation/Animator; in class 22:Lme/zeeroooo/materialfb/Activities/MainActivity;.circleReveal(Landroid/view/View;)V not found for API <= 19
+Method Landroid/view/ViewAnimationUtils;.createCircularReveal(Landroid/view/View;IIFF)Landroid/animation/Animator; in class 22:Lme/zeeroooo/materialfb/Activities/MainActivity;.circleReveal(IZ)V not found for API <= 19
+Method Landroid/app/job/JobInfo$Builder;.setPersisted(Z)Landroid/app/job/JobInfo$Builder; in class 22:Lme/zeeroooo/materialfb/Notifications/Scheduler;.schedule(IZ)V not found for API <= 19
+Method Landroid/app/job/JobInfo$Builder;.setRequiredNetworkType(I)Landroid/app/job/JobInfo$Builder; in class 22:Lme/zeeroooo/materialfb/Notifications/Scheduler;.schedule(IZ)V not found for API <= 19
+Method Landroid/app/job/JobInfo$Builder;.setMinimumLatency(J)Landroid/app/job/JobInfo$Builder; in class 22:Lme/zeeroooo/materialfb/Notifications/Scheduler;.schedule(IZ)V not found for API <= 19
+Method Landroid/app/job/JobInfo$Builder;.setExtras(Landroid/os/PersistableBundle;)Landroid/app/job/JobInfo$Builder; in class 22:Lme/zeeroooo/materialfb/Notifications/Scheduler;.schedule(IZ)V not found for API <= 19
+Method Landroid/app/job/JobInfo$Builder;.setOverrideDeadline(J)Landroid/app/job/JobInfo$Builder; in class 22:Lme/zeeroooo/materialfb/Notifications/Scheduler;.schedule(IZ)V not found for API <= 19
+Method Landroid/app/job/JobScheduler;.schedule(Landroid/app/job/JobInfo;)I in class 22:Lme/zeeroooo/materialfb/Notifications/Scheduler;.schedule(IZ)V not found for API <= 19
+Method Landroid/app/job/JobInfo$Builder;.setOverrideDeadline(J)Landroid/app/job/JobInfo$Builder; in class 22:Lme/zeeroooo/materialfb/Notifications/Scheduler;.schedule(IZ)V not found for API <= 19
+Method Landroid/app/job/JobParameters;.getExtras()Landroid/os/PersistableBundle; in class 22:Lme/zeeroooo/materialfb/Notifications/NotificationsJS;.repeat(Landroid/app/job/JobParameters;)Z not found for API <= 19
+Method Landroid/webkit/WebResourceRequest;.getUrl()Landroid/net/Uri; in class 22:Lme/zeeroooo/materialfb/Activities/MainActivity$6;.shouldOverrideUrlLoading(Landroid/webkit/WebView;Landroid/webkit/WebResourceRequest;)Z not found for API <= 19
+Method Landroid/app/AlarmManager;.setExact(IJLandroid/app/PendingIntent;)V in class 22:Lme/zeeroooo/materialfb/Notifications/Scheduler;.startAlarm()V not found for API <= 18

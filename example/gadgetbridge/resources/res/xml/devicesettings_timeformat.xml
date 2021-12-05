@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <ListPreference android:icon="@drawable/ic_access_time" android:entries="@array/pref_timeformat_entries" android:title="@string/pref_title_timeformat" android:key="timeformat" android:summary="%s" android:defaultValue="@string/p_timeformat_auto" android:entryValues="@array/pref_timeformat_values"/>
+</androidx.preference.PreferenceScreen>

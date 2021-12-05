@@ -1,0 +1,63 @@
+Cards Abstract:
+    https://pixabay.com/en/card-deck-deck-cards-playing-cards-161536/ or
+    https://openclipart.org/detail/175269/complete-guyenne-deck
+
+    Downloaded from pixabay, under the CC0 license. 4 color theme was added by me.
+
+Cards Classic:
+    https://pixabay.com/en/atlasnye-deck-playing-cards-game-884206/ or
+    https://openclipart.org/detail/226207/full-deck-of-ornate-playing-cards
+
+    Downloaded from pixabay, under the CC0 license. Changed the characters of Ace, Joker and Queen.
+    4 color theme was added by me.
+
+Cards Modern:
+    The theme is available on pixabay.org, but every card as a single file, or
+    http://nicubunu.ro/cards/
+
+    Downloaded from pixabay, under the CC0 license. 4 color theme was added by me.
+
+Cards Oxygen Dark/Light:
+    https://pixabay.com/en/ace-cards-club-diamond-heart-jack-159857/ 
+    https://pixabay.com/en/ace-cards-club-diamond-heart-jack-159856/ or
+
+    https://openclipart.org/detail/171445/oxygen-playing-card-faces
+    https://openclipart.org/detail/171444/white-oxygen-playing-card-faces
+
+    Downloaded from pixabay, under the CC0 license. 4 color theme was added by me.
+
+Cards Simple:
+    https://pixabay.com/en/pack-of-cards-deck-of-cards-37194/
+
+    Downloaded from pixabay, under the CC0 license. 4 color theme was added by me.
+
+Cards Poker:
+    Vectorized Playing Cards 2.0 - http://sourceforge.net/projects/vector-cards/
+    Copyright 2015 - Chris Aguilar - conjurenation@gmail.com
+    Licensed under LGPL 3 - www.gnu.org/copyleft/lesser.html
+    
+    Downloaded from sourceforge, under the LGPLv3 license. 4 color theme was added by me.
+
+Cards Basic:
+    Created by me from the Ornate theme using Gimp. (Vector version coming soon). Also 
+    useable under the CC0 license.
+
+Cards Paris:
+    SVG-cards 2.1 - https://sourceforge.net/projects/svg-cards/
+    Copyright 2005 - David Bellot - david.bellot@free.fr
+    Licensed under LGPL 2.1 - https://www.gnu.org/licenses/lgpl-2.1.html
+    
+    Downloaded from sourceforge, under the LGPLv2.1 license. 4 color theme was added by me.
+
+Cards Dondorf:
+    Available in the public domain, see here:
+    https://git.gnome.org/browse/aisleriot/tree/cards/README.dondorf
+
+    4 color theme was added by me.
+
+Card Backgrounds:
+
+    The first background was created by me, under CC0 license. The other backgrounds are part of the card themes 
+    and they are under the same licencse as their original card theme. 4 color theme was added by me.
+
+

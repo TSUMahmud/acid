@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="settings_menu" type="id"/>
+    <item name="list_widget_row_summary" type="id"/>
+    <item name="create_notebook_menu" type="id"/>
+    <item name="share_menu" type="id"/>
+    <item name="ok_menu" type="id"/>
+    <item name="delete_menu" type="id"/>
+    <item name="change_classification" type="id"/>
+    <item name="create_tag_menu" type="id"/>
+    <item name="create_search_menu" type="id"/>
+    <item name="create_sort_menu" type="id"/>
+    <item name="dialog_text_input_field" type="id"/>
+    <item name="dialog_classification" type="id"/>
+    <item name="dialog_search_input_field" type="id"/>
+    <item name="edit_tag_menu" type="id"/>
+    <item name="detail_summary" type="id"/>
+    <item name="detail_description" type="id"/>
+    <item name="create_account_menu" type="id"/>
+    <item name="list_note_row_summary" type="id"/>
+    <item name="delete_notebook_menu" type="id"/>
+    <item name="tag_list" type="id"/>
+</resources>

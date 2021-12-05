@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="newnote"
+        android:enabled="true"
+        android:icon="@drawable/ic_compose"
+        android:shortcutShortLabel="@string/note_created"
+        android:shortcutLongLabel="@string/note_created">
+
+        <!-- So that back navigation goes to Main Activity -->
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="org.kore.kolabnotes.android"
+            android:targetClass="org.kore.kolabnotes.android.MainActivity" />
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="org.kore.kolabnotes.android"
+            android:targetClass="org.kore.kolabnotes.android.DetailActivity" />
+    </shortcut>
+</shortcuts>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10dp">
+    <TextView android:textSize="20dp" android:textStyle="bold" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Weather on your Pebble" android:textAlignment="center"/>
+    <androidx.legacy.widget.Space android:layout_width="match_parent" android:layout_height="@dimen/activity_vertical_margin"/>
+    <TextView android:id="@+id/weather_notification_label" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/weather_notification_label"/>
+</LinearLayout>

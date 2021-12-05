@@ -1,0 +1,5 @@
+Callback incompatibilities
+
+
+API incompatibilities
+Landroid/content/res/AssetManager$AssetInputStream;.getAssetInt()I not found for API 28

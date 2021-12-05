@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <EditTextPreference android:maxLength="2" android:title="@string/miband_prefs_device_time_offset_hours" android:key="device_time_offset_hours" android:defaultValue="0" android:inputType="number"/>
+</androidx.preference.PreferenceScreen>

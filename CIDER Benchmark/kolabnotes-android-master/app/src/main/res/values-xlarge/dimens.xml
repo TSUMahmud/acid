@@ -1,0 +1,14 @@
+<resources>
+    <!-- Drawer -->
+    <dimen name="drawer_primary">80dp</dimen>
+    <dimen name="drawer_primary_text">26sp</dimen>
+    <dimen name="drawer_secondary">60dp</dimen>
+    <dimen name="drawer_secondary_text">20sp</dimen>
+    <dimen name="drawer_secondary_icon">22dp</dimen>
+    <dimen name="drawer_width">320dp</dimen>
+
+    <dimen name="nav_header_height">88dp</dimen>
+    <dimen name="nav_header_content_size">58dp</dimen>
+    <dimen name="nav_header_top_padding">20dp</dimen>
+    <dimen name="nav_header_bottom_padding">8dp</dimen>
+</resources>

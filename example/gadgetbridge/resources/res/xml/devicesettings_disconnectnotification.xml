@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <PreferenceScreen android:icon="@drawable/ic_signal_cellular_connected_no_internet_0_bar" android:persistent="false" android:title="@string/prefs_disconnect_notification" android:key="screen_disconnect_nofifiction">
+        <PreferenceCategory android:title="@string/prefs_disconnect_notification"/>
+        <ListPreference android:entries="@array/activate_display_on_lift" android:title="@string/prefs_disconnect_notification" android:key="disconnect_notification" android:summary="%s" android:defaultValue="@string/p_off" android:entryValues="@array/activate_display_on_lift_values"/>
+        <nodomain.freeyourgadget.gadgetbridge.util.XTimePreference android:title="@string/mi2_prefs_do_not_disturb_start" android:key="disconnect_notification_start" android:defaultValue="00:00"/>
+        <nodomain.freeyourgadget.gadgetbridge.util.XTimePreference android:title="@string/mi2_prefs_do_not_disturb_end" android:key="disconnect_notification_end" android:defaultValue="00:00"/>
+    </PreferenceScreen>
+</androidx.preference.PreferenceScreen>

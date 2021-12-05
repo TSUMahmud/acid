@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/delete_button"
+            tools:ignore="MissingPrefix"
+            app:srcCompat="@drawable/ic_action_delete"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/label_field_edit"
+                android:minWidth="64dp"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:hint="label"
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/value_field_edit"
+                android:minWidth="64dp"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:hint="value"
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

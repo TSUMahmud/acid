@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <SwitchPreference android:icon="@drawable/ic_font_download" android:title="@string/pref_title_use_custom_font" android:key="use_custom_font" android:summary="@string/pref_summary_use_custom_font" android:defaultValue="false"/>
+</androidx.preference.PreferenceScreen>

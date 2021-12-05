@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <PreferenceCategory android:title="@string/pref_header_general" android:key="pref_category_zetime_general">
+        <EditTextPreference android:maxLength="5" android:title="@string/zetime_title_screentime" android:key="zetime_screentime" android:defaultValue="30" android:inputType="number"/>
+        <CheckBoxPreference android:title="@string/zetime_activity_tracking" android:key="zetime_activity_tracking" android:summary="@string/zetime_activity_tracking_summary" android:defaultValue="false"/>
+        <EditTextPreference android:maxLength="5" android:title="@string/miband_prefs_fitness_goal" android:key="mi_fitness_goal" android:defaultValue="10000" android:inputType="number"/>
+        <EditTextPreference android:maxLength="2" android:title="@string/activity_prefs_sleep_duration" android:key="activity_user_sleep_duration" android:inputType="number"/>
+        <EditTextPreference android:maxLength="4" android:title="@string/activity_prefs_calories_burnt" android:key="activity_user_calories_burnt" android:defaultValue="2000" android:inputType="number"/>
+        <EditTextPreference android:maxLength="5" android:title="@string/activity_prefs_distance_meters" android:key="activity_user_distance_meters" android:defaultValue="5" android:inputType="number"/>
+        <EditTextPreference android:maxLength="3" android:title="@string/activity_prefs_activetime_minutes" android:key="activity_user_activetime_minutes" android:defaultValue="60" android:inputType="number"/>
+        <PreferenceScreen android:persistent="false" android:title="@string/mi2_prefs_inactivity_warnings" android:key="zetime_inactivity_warning_key" android:summary="@string/mi2_prefs_inactivity_warnings_summary">
+            <PreferenceCategory android:title="@string/mi2_prefs_inactivity_warnings"/>
+            <CheckBoxPreference android:title="@string/mi2_prefs_inactivity_warnings" android:key="zetime_inactivity_warnings" android:summary="@string/mi2_prefs_inactivity_warnings_summary" android:defaultValue="false"/>
+            <EditTextPreference android:maxLength="3" android:title="@string/mi2_prefs_inactivity_warnings_threshold" android:key="zetime_inactivity_warnings_threshold" android:dependency="zetime_inactivity_warnings" android:defaultValue="60" android:inputType="numberSigned"/>
+            <nodomain.freeyourgadget.gadgetbridge.util.TimePreference android:title="@string/mi2_prefs_do_not_disturb_start" android:key="zetime_inactivity_warnings_start" android:dependency="zetime_inactivity_warnings" android:defaultValue="06:00"/>
+            <nodomain.freeyourgadget.gadgetbridge.util.TimePreference android:title="@string/mi2_prefs_do_not_disturb_end" android:key="zetime_inactivity_warnings_end" android:dependency="zetime_inactivity_warnings" android:defaultValue="22:00"/>
+            <PreferenceCategory android:title="@string/zetime_prefs_inactivity_repetitions" android:dependency="zetime_inactivity_warnings">
+                <CheckBoxPreference android:title="@string/zetime_prefs_inactivity_mo" android:key="zetime_prefs_inactivity_repetitions_mo" android:defaultValue="false"/>
+                <CheckBoxPreference android:title="@string/zetime_prefs_inactivity_tu" android:key="zetime_prefs_inactivity_repetitions_tu" android:defaultValue="false"/>
+                <CheckBoxPreference android:title="@string/zetime_prefs_inactivity_we" android:key="zetime_prefs_inactivity_repetitions_we" android:defaultValue="false"/>
+                <CheckBoxPreference android:title="@string/zetime_prefs_inactivity_th" android:key="zetime_prefs_inactivity_repetitions_th" android:defaultValue="false"/>
+                <CheckBoxPreference android:title="@string/zetime_prefs_inactivity_fr" android:key="zetime_prefs_inactivity_repetitions_fr" android:defaultValue="false"/>
+                <CheckBoxPreference android:title="@string/zetime_prefs_inactivity_sa" android:key="zetime_prefs_inactivity_repetitions_sa" android:defaultValue="false"/>
+                <CheckBoxPreference android:title="@string/zetime_prefs_inactivity_su" android:key="zetime_prefs_inactivity_repetitions_su" android:defaultValue="false"/>
+            </PreferenceCategory>
+        </PreferenceScreen>
+        <ListPreference android:entries="@array/zetime_calories_type" android:title="@string/zetime_calories_type" android:key="zetime_calories_type" android:summary="%s" android:defaultValue="0" android:entryValues="@array/zetime_calories_type_values"/>
+        <CheckBoxPreference android:title="@string/zetime_handmove_display" android:key="zetime_handmove_display" android:summary="@string/zetime_handmove_display_summary" android:defaultValue="false"/>
+        <ListPreference android:entries="@array/zetime_analog_mode" android:title="@string/zetime_analog_mode" android:key="zetime_analog_mode" android:summary="%s" android:defaultValue="0" android:entryValues="@array/zetime_analog_mode_values"/>
+        <ListPreference android:entries="@array/zetime_date_format" android:title="@string/zetime_date_format" android:key="zetime_date_format" android:summary="%s" android:defaultValue="2" android:entryValues="@array/zetime_date_format_values"/>
+        <CheckBoxPreference android:title="@string/pref_title_keep_data_on_device" android:key="zetime_dont_del_actdata" android:summary="@string/pref_summary_keep_data_on_device" android:defaultValue="true"/>
+        <PreferenceScreen android:persistent="false" android:title="@string/mi2_prefs_do_not_disturb" android:key="zetime_do_not_disturb_key" android:summary="@string/mi2_prefs_do_not_disturb_summary">
+            <PreferenceCategory android:title="@string/mi2_prefs_do_not_disturb"/>
+            <ListPreference android:entries="@array/zetime_do_not_disturb" android:title="@string/mi2_prefs_do_not_disturb" android:key="zetime_do_not_disturb" android:summary="%s" android:defaultValue="@string/p_off" android:entryValues="@array/zetime_do_not_disturb_values"/>
+            <nodomain.freeyourgadget.gadgetbridge.util.TimePreference android:title="@string/mi2_prefs_do_not_disturb_start" android:key="zetime_do_not_disturb_start" android:defaultValue="22:00"/>
+            <nodomain.freeyourgadget.gadgetbridge.util.TimePreference android:title="@string/mi2_prefs_do_not_disturb_end" android:key="zetime_do_not_disturb_end" android:defaultValue="07:00"/>
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/zetime_title_heartrate" android:key="pref_category_zetime_heartrate">
+        <ListPreference android:entries="@array/prefs_zetime_heartrate_measurement_interval" android:title="@string/prefs_title_heartrate_measurement_interval" android:key="heartrate_measurement_interval" android:summary="%s" android:defaultValue="0" android:entryValues="@array/prefs_zetime_heartrate_measurement_interval_values"/>
+        <PreferenceScreen android:persistent="false" android:title="@string/zetime_title_heart_rate_alarm" android:key="zetime_heartrate_alarm_key" android:summary="@string/zetime_title_heart_rate_alarm_summary">
+            <PreferenceCategory android:title="@string/zetime_title_heart_rate_alarm"/>
+            <CheckBoxPreference android:title="@string/zetime_heart_rate_alarm_enable" android:key="zetime_heartrate_alarm_enable" android:summary="@string/zetime_title_heart_rate_alarm_summary" android:defaultValue="false"/>
+            <EditTextPreference android:maxLength="3" android:title="@string/activity_prefs_alarm_max_heart_rate" android:key="alarm_max_heart_rate" android:dependency="zetime_heartrate_alarm_enable" android:defaultValue="180" android:inputType="number"/>
+            <EditTextPreference android:maxLength="3" android:title="@string/activity_prefs_alarm_min_heart_rate" android:key="alarm_min_heart_rate" android:dependency="zetime_heartrate_alarm_enable" android:defaultValue="60" android:inputType="number"/>
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_header_vibration_settings" android:key="pref_category_miband_notification">
+        <PreferenceScreen android:persistent="false" android:title="@string/pref_screen_notification_profile_sms" android:key="vibration_profile_key">
+            <PreferenceCategory android:title="@string/pref_screen_notification_profile_sms"/>
+            <ListPreference android:entries="@array/zetime_signaling_types" android:title="@string/miband_prefs_vibration" android:key="zetime_vibration_profile_sms" android:summary="%s" android:defaultValue="2" android:entryValues="@array/zetime_signaling_types_values"/>
+            <Preference android:persistent="false" android:title="@string/vibration_try" android:key="zetime_try_generic_sms"/>
+        </PreferenceScreen>
+        <PreferenceScreen android:persistent="false" android:title="@string/pref_screen_notification_profile_incoming_call" android:key="vibration_profile_key">
+            <PreferenceCategory android:title="@string/pref_screen_notification_profile_incoming_call"/>
+            <ListPreference android:entries="@array/zetime_signaling_types" android:title="@string/miband_prefs_vibration" android:key="zetime_vibration_profile_incoming_call" android:summary="%s" android:defaultValue="13" android:entryValues="@array/zetime_signaling_types_values"/>
+        </PreferenceScreen>
+        <PreferenceScreen android:persistent="false" android:title="@string/pref_screen_notification_profile_missed_call" android:key="vibration_profile_key">
+            <PreferenceCategory android:title="@string/pref_screen_notification_profile_missed_call"/>
+            <ListPreference android:entries="@array/zetime_signaling_types" android:title="@string/miband_prefs_vibration" android:key="zetime_vibration_profile_missed_call" android:summary="%s" android:defaultValue="12" android:entryValues="@array/zetime_signaling_types_values"/>
+        </PreferenceScreen>
+        <PreferenceScreen android:persistent="false" android:title="@string/pref_screen_notification_profile_email" android:key="vibration_profile_key">
+            <PreferenceCategory android:title="@string/pref_screen_notification_profile_email"/>
+            <ListPreference android:entries="@array/zetime_signaling_types" android:title="@string/miband_prefs_vibration" android:key="zetime_vibration_profile_generic_email" android:summary="%s" android:defaultValue="12" android:entryValues="@array/zetime_signaling_types_values"/>
+            <Preference android:persistent="false" android:title="@string/vibration_try" android:key="zetime_try_generic_email"/>
+        </PreferenceScreen>
+        <PreferenceScreen android:persistent="false" android:title="@string/pref_screen_notification_profile_generic_social" android:key="vibration_profile_key">
+            <PreferenceCategory android:title="@string/pref_screen_notification_profile_generic_social"/>
+            <ListPreference android:entries="@array/zetime_signaling_types" android:title="@string/miband_prefs_vibration" android:key="zetime_vibration_profile_generic_social" android:summary="%s" android:defaultValue="12" android:entryValues="@array/zetime_signaling_types_values"/>
+            <Preference android:persistent="false" android:title="@string/vibration_try" android:key="zetime_try_generic_social"/>
+        </PreferenceScreen>
+        <PreferenceScreen android:persistent="false" android:title="@string/pref_screen_notification_profile_alarm_clock" android:key="vibration_profile_key">
+            <PreferenceCategory android:title="@string/pref_screen_notification_profile_alarm_clock"/>
+            <ListPreference android:entries="@array/zetime_signaling_types" android:title="@string/miband_prefs_vibration" android:key="zetime_alarm_signaling" android:summary="%s" android:defaultValue="11" android:entryValues="@array/zetime_signaling_types_values"/>
+            <Preference android:persistent="false" android:title="@string/vibration_try" android:key="zetime_try_generic_alarm_clock"/>
+        </PreferenceScreen>
+        <PreferenceScreen android:persistent="false" android:title="@string/pref_screen_notification_profile_calendar" android:key="vibration_profile_key">
+            <PreferenceCategory android:title="@string/pref_screen_notification_profile_calendar"/>
+            <ListPreference android:entries="@array/zetime_signaling_types" android:title="@string/miband_prefs_vibration" android:key="zetime_vibration_profile_calendar" android:summary="%s" android:defaultValue="12" android:entryValues="@array/zetime_signaling_types_values"/>
+            <Preference android:persistent="false" android:title="@string/vibration_try" android:key="zetime_try_calendar"/>
+        </PreferenceScreen>
+        <PreferenceScreen android:persistent="false" android:title="@string/pref_screen_notification_profile_inactivity" android:key="vibration_profile_key">
+            <PreferenceCategory android:title="@string/pref_screen_notification_profile_inactivity"/>
+            <ListPreference android:entries="@array/zetime_signaling_types" android:title="@string/miband_prefs_vibration" android:key="zetime_vibration_profile_inactivity" android:summary="%s" android:defaultValue="12" android:entryValues="@array/zetime_signaling_types_values"/>
+            <Preference android:persistent="false" android:title="@string/vibration_try" android:key="zetime_try_inactivity"/>
+        </PreferenceScreen>
+        <PreferenceScreen android:persistent="false" android:title="@string/pref_screen_notification_profile_low_power" android:key="vibration_profile_key">
+            <PreferenceCategory android:title="@string/pref_screen_notification_profile_low_power"/>
+            <ListPreference android:entries="@array/zetime_signaling_types" android:title="@string/miband_prefs_vibration" android:key="zetime_vibration_profile_lowpower" android:summary="%s" android:defaultValue="4" android:entryValues="@array/zetime_signaling_types_values"/>
+            <Preference android:persistent="false" android:title="@string/vibration_try" android:key="zetime_try_lowpower"/>
+        </PreferenceScreen>
+        <PreferenceScreen android:persistent="false" android:title="@string/pref_screen_notification_profile_anti_loss" android:key="vibration_profile_key">
+            <PreferenceCategory android:title="@string/pref_screen_notification_profile_anti_loss"/>
+            <ListPreference android:entries="@array/zetime_signaling_types" android:title="@string/miband_prefs_vibration" android:key="zetime_vibration_profile_antiloss" android:summary="%s" android:defaultValue="13" android:entryValues="@array/zetime_signaling_types_values"/>
+            <Preference android:persistent="false" android:title="@string/vibration_try" android:key="zetime_try_antiloss"/>
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>

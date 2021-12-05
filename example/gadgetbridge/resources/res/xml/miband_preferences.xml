@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <PreferenceCategory android:title="@string/activity_prefs_about_you" android:key="pref_category_miband_personal">
+        <EditTextPreference android:maxLength="17" android:title="@string/miband_prefs_alias" android:key="mi_user_alias"/>
+        <EditTextPreference android:maxLength="5" android:title="@string/miband_prefs_fitness_goal" android:key="mi_fitness_goal" android:defaultValue="10000" android:inputType="number"/>
+        <CheckBoxPreference android:title="@string/mi2_prefs_goal_notification" android:key="mi2_goal_notification" android:summary="@string/mi2_prefs_goal_notification_summary" android:defaultValue="false"/>
+        <CheckBoxPreference android:title="@string/miband_prefs_hr_sleep_detection" android:key="mi_hr_sleep_detection" android:defaultValue="false"/>
+        <ListPreference android:entries="@array/prefs_heartrate_measurement_interval" android:title="@string/prefs_title_heartrate_measurement_interval" android:key="heartrate_measurement_interval" android:summary="%s" android:defaultValue="0" android:entryValues="@array/prefs_heartrate_measurement_interval_values"/>
+        <PreferenceScreen android:persistent="false" android:title="@string/mi2_prefs_inactivity_warnings" android:key="mi2_inactivity_warning_key" android:summary="@string/mi2_prefs_inactivity_warnings_summary">
+            <PreferenceCategory android:title="@string/mi2_prefs_inactivity_warnings"/>
+            <CheckBoxPreference android:title="@string/mi2_prefs_inactivity_warnings" android:key="mi2_inactivity_warnings" android:summary="@string/mi2_prefs_inactivity_warnings_summary" android:defaultValue="false"/>
+            <EditTextPreference android:maxLength="2" android:title="@string/mi2_prefs_inactivity_warnings_threshold" android:key="mi2_inactivity_warnings_threshold" android:dependency="mi2_inactivity_warnings" android:defaultValue="60" android:inputType="numberSigned"/>
+            <nodomain.freeyourgadget.gadgetbridge.util.TimePreference android:title="@string/mi2_prefs_do_not_disturb_start" android:key="mi2_inactivity_warnings_start" android:dependency="mi2_inactivity_warnings" android:defaultValue="06:00"/>
+            <nodomain.freeyourgadget.gadgetbridge.util.TimePreference android:title="@string/mi2_prefs_do_not_disturb_end" android:key="mi2_inactivity_warnings_end" android:dependency="mi2_inactivity_warnings" android:defaultValue="22:00"/>
+            <CheckBoxPreference android:title="@string/mi2_prefs_do_not_disturb" android:key="mi2_inactivity_warnings_dnd" android:summary="@string/mi2_prefs_inactivity_warnings_dnd_summary" android:dependency="mi2_inactivity_warnings" android:defaultValue="false"/>
+            <nodomain.freeyourgadget.gadgetbridge.util.TimePreference android:title="@string/mi2_prefs_do_not_disturb_start" android:key="mi2_inactivity_warnings_dnd_start" android:dependency="mi2_inactivity_warnings_dnd" android:defaultValue="12:00"/>
+            <nodomain.freeyourgadget.gadgetbridge.util.TimePreference android:title="@string/mi2_prefs_do_not_disturb_end" android:key="mi2_inactivity_warnings_dnd_end" android:dependency="mi2_inactivity_warnings_dnd" android:defaultValue="14:00"/>
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_header_vibration_settings" android:key="pref_category_miband_notification">
+        <PreferenceScreen android:persistent="false" android:title="@string/pref_screen_notification_profile_sms" android:key="vibration_profile_key">
+            <PreferenceCategory android:title="@string/pref_screen_notification_profile_sms"/>
+            <ListPreference android:entries="@array/vibration_profile" android:title="@string/miband_prefs_vibration" android:key="mi_vibration_profile_generic_sms" android:summary="%s" android:defaultValue="@string/p_staccato" android:entryValues="@array/vibration_profile_values"/>
+            <EditTextPreference android:maxLength="1" android:title="@string/pref_title_notifications_repetitions" android:key="mi_vibration_count_generic_sms" android:defaultValue="3" android:inputType="number"/>
+            <Preference android:persistent="false" android:title="@string/vibration_try" android:key="mi_try_generic_sms"/>
+        </PreferenceScreen>
+        <PreferenceScreen android:persistent="false" android:title="@string/pref_screen_notification_profile_incoming_call" android:key="vibration_profile_key">
+            <PreferenceCategory android:title="@string/pref_screen_notification_profile_incoming_call"/>
+            <ListPreference android:entries="@array/vibration_profile" android:title="@string/miband_prefs_vibration" android:key="mi_vibration_profile_incoming_call" android:summary="%s" android:defaultValue="@string/p_ring" android:entryValues="@array/vibration_profile_values"/>
+            <EditTextPreference android:maxLength="2" android:title="@string/pref_title_notifications_repetitions" android:key="mi_vibration_count_incoming_call" android:defaultValue="60" android:inputType="number"/>
+        </PreferenceScreen>
+        <PreferenceScreen android:persistent="false" android:title="@string/pref_screen_notification_profile_email" android:key="vibration_profile_key">
+            <PreferenceCategory android:title="@string/pref_screen_notification_profile_email"/>
+            <ListPreference android:entries="@array/vibration_profile" android:title="@string/miband_prefs_vibration" android:key="mi_vibration_profile_generic_email" android:summary="%s" android:defaultValue="@string/p_medium" android:entryValues="@array/vibration_profile_values"/>
+            <EditTextPreference android:maxLength="1" android:title="@string/pref_title_notifications_repetitions" android:key="mi_vibration_count_generic_email" android:defaultValue="2" android:inputType="number"/>
+            <Preference android:persistent="false" android:title="@string/vibration_try" android:key="mi_try_generic_email"/>
+        </PreferenceScreen>
+        <PreferenceScreen android:persistent="false" android:title="@string/pref_screen_notification_profile_generic_chat" android:key="vibration_profile_key">
+            <PreferenceCategory android:title="@string/pref_screen_notification_profile_generic_chat"/>
+            <ListPreference android:entries="@array/vibration_profile" android:title="@string/miband_prefs_vibration" android:key="mi_vibration_profile_generic_chat" android:summary="%s" android:defaultValue="@string/p_waterdrop" android:entryValues="@array/vibration_profile_values"/>
+            <EditTextPreference android:maxLength="1" android:title="@string/pref_title_notifications_repetitions" android:key="mi_vibration_count_generic_chat" android:defaultValue="3" android:inputType="number"/>
+            <Preference android:persistent="false" android:title="@string/vibration_try" android:key="mi_try_generic_chat"/>
+        </PreferenceScreen>
+        <PreferenceScreen android:persistent="false" android:title="@string/pref_screen_notification_profile_generic_social" android:key="vibration_profile_key">
+            <PreferenceCategory android:title="@string/pref_screen_notification_profile_generic_social"/>
+            <ListPreference android:entries="@array/vibration_profile" android:title="@string/miband_prefs_vibration" android:key="mi_vibration_profile_generic_social" android:summary="%s" android:defaultValue="@string/p_waterdrop" android:entryValues="@array/vibration_profile_values"/>
+            <EditTextPreference android:maxLength="1" android:title="@string/pref_title_notifications_repetitions" android:key="mi_vibration_count_generic_social" android:defaultValue="3" android:inputType="number"/>
+            <Preference android:persistent="false" android:title="@string/vibration_try" android:key="mi_try_generic_social"/>
+        </PreferenceScreen>
+        <PreferenceScreen android:persistent="false" android:title="@string/pref_screen_notification_profile_alarm_clock" android:key="vibration_profile_key">
+            <PreferenceCategory android:title="@string/pref_screen_notification_profile_alarm_clock"/>
+            <ListPreference android:entries="@array/vibration_profile" android:title="@string/miband_prefs_vibration" android:key="mi_vibration_profile_alarm_clock" android:summary="%s" android:defaultValue="@string/p_alarm_clock" android:entryValues="@array/vibration_profile_values"/>
+            <EditTextPreference android:maxLength="2" android:title="@string/pref_title_notifications_repetitions" android:key="mi_vibration_count_alarm_clock" android:defaultValue="3" android:inputType="number"/>
+            <Preference android:persistent="false" android:title="@string/vibration_try" android:key="mi_try_generic_alarm_clock"/>
+        </PreferenceScreen>
+        <PreferenceScreen android:persistent="false" android:title="@string/pref_screen_notification_profile_generic_navigation" android:key="vibration_profile_key">
+            <PreferenceCategory android:title="@string/pref_screen_notification_profile_generic_navigation"/>
+            <ListPreference android:entries="@array/vibration_profile" android:title="@string/miband_prefs_vibration" android:key="mi_vibration_profile_generic_navigation" android:summary="%s" android:defaultValue="@string/p_waterdrop" android:entryValues="@array/vibration_profile_values"/>
+            <EditTextPreference android:maxLength="1" android:title="@string/pref_title_notifications_repetitions" android:key="mi_vibration_count_generic_navigation" android:defaultValue="3" android:inputType="number"/>
+            <Preference android:persistent="false" android:title="@string/vibration_try" android:key="mi_try_generic_navigation"/>
+        </PreferenceScreen>
+        <PreferenceScreen android:persistent="false" android:title="@string/pref_screen_notification_profile_generic" android:key="vibration_profile_key">
+            <PreferenceCategory android:title="@string/pref_screen_notification_profile_generic"/>
+            <ListPreference android:entries="@array/vibration_profile" android:title="@string/miband_prefs_vibration" android:key="mi_vibration_profile_generic" android:summary="%s" android:defaultValue="@string/p_waterdrop" android:entryValues="@array/vibration_profile_values"/>
+            <EditTextPreference android:maxLength="1" android:title="@string/pref_title_notifications_repetitions" android:key="mi_vibration_count_generic" android:defaultValue="3" android:inputType="number"/>
+            <Preference android:persistent="false" android:title="@string/vibration_try" android:key="mi_try_generic"/>
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_header_development" android:key="pref_key_development">
+        <CheckBoxPreference android:title="@string/pref_title_setup_bt_pairing" android:key="mi_setup_bt_pairing" android:summary="@string/pref_summary_setup_bt_pairing" android:defaultValue="true"/>
+        <EditTextPreference android:maxLength="17" android:digits="0123456789ABCDEF:" android:title="@string/pref_title_development_miaddr" android:key="development_miaddr"/>
+        <CheckBoxPreference android:title="@string/pref_title_keep_data_on_device" android:key="mi_dont_ack_transfer" android:summary="@string/pref_summary_keep_data_on_device" android:defaultValue="false"/>
+    </PreferenceCategory>
+</PreferenceScreen>

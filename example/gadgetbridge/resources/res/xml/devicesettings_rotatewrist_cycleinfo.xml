@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <SwitchPreference android:icon="@drawable/ic_rotate_left" android:title="@string/mi2_prefs_rotate_wrist_to_switch_info" android:key="rotate_wrist_to_cycle_info" android:defaultValue="false"/>
+</androidx.preference.PreferenceScreen>

@@ -1,0 +1,6 @@
+Callback incompatibilities
+
+
+API incompatibilities
+
+Landroid/security/keystore/KeyProtection$Builder;.setBlockModes([Ljava/lang/String;)Landroid/security/keystore/KeyProtection$Builder; not found for API <= 22

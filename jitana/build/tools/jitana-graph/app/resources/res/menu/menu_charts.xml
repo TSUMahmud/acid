@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@android:drawable/stat_notify_sync_noanim" android:id="@+id/charts_fetch_activity_data" android:title="@string/controlcenter_fetch_activity_data" app:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/ic_settings" android:id="@+id/prefs_charts_menu" android:title="@string/pref_header_charts" app:iconTint="@color/primarytext_dark" app:showAsAction="ifRoom"/>
+</menu>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:id="@+id/qhybrid_packageChooserLoading" android:paddingTop="40dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+        <ListView android:id="@+id/qhybrid_appChooserList" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="activate_display_on_lift">
+        <item>@string/off</item>
+        <item>@string/on</item>
+        <item>@string/mi2_dnd_scheduled</item>
+    </array>
+    <array name="activate_display_on_lift_values">
+        <item>@string/p_off</item>
+        <item>@string/p_on</item>
+        <item>@string/p_scheduled</item>
+    </array>
+    <array name="button_action_options">
+        <item>@string/pref_button_action_disabled</item>
+        <item>@string/pref_media_play</item>
+        <item>@string/pref_media_pause</item>
+        <item>@string/pref_media_playpause</item>
+        <item>@string/pref_media_next</item>
+        <item>@string/pref_media_previous</item>
+        <item>@string/pref_media_volumeup</item>
+        <item>@string/pref_media_volumedown</item>
+        <item>@string/pref_media_forward</item>
+        <item>@string/pref_media_rewind</item>
+    </array>
+    <array name="button_action_values">
+        <item>@string/pref_button_action_disabled_value</item>
+        <item>@string/pref_media_play_value</item>
+        <item>@string/pref_media_pause_value</item>
+        <item>@string/pref_media_playpause_value</item>
+        <item>@string/pref_media_next_value</item>
+        <item>@string/pref_media_previous_value</item>
+        <item>@string/pref_media_volumeup_value</item>
+        <item>@string/pref_media_volumedown_value</item>
+        <item>@string/pref_media_forward_value</item>
+        <item>@string/pref_media_rewind_value</item>
+    </array>
+    <array name="dateformats">
+        <item>dd.MM.yyyy</item>
+        <item>dd/MM/yyyy</item>
+        <item>MM/dd/yyyy</item>
+    </array>
+    <array name="dateformats_values">
+        <item>dd.MM.yyyy</item>
+        <item>dd/MM/yyyy</item>
+        <item>MM/dd/yyyy</item>
+    </array>
+    <array name="do_not_disturb_no_auto">
+        <item>@string/mi2_dnd_off</item>
+        <item>@string/mi2_dnd_scheduled</item>
+    </array>
+    <array name="do_not_disturb_no_auto_values">
+        <item>@string/p_off</item>
+        <item>@string/p_scheduled</item>
+    </array>
+    <array name="gender">
+        <item>@string/male</item>
+        <item>@string/female</item>
+        <item>@string/other</item>
+    </array>
+    <array name="gender_values">
+        <item>1</item>
+        <item>@null</item>
+        <item>2</item>
+    </array>
+    <array name="mi2_dateformats">
+        <item>@string/dateformat_time</item>
+        <item>@string/dateformat_date_time</item>
+    </array>
+    <array name="mi2_dateformats_values">
+        <item>@string/p_dateformat_time</item>
+        <item>@string/p_dateformat_datetime</item>
+    </array>
+    <array name="mi2_do_not_disturb">
+        <item>@string/mi2_dnd_off</item>
+        <item>@string/mi2_dnd_automatic</item>
+        <item>@string/mi2_dnd_scheduled</item>
+    </array>
+    <array name="mi2_do_not_disturb_values">
+        <item>@string/p_off</item>
+        <item>@string/p_automatic</item>
+        <item>@string/p_scheduled</item>
+    </array>
+    <array name="mi3_night_mode">
+        <item>@string/off</item>
+        <item>@string/mi2_dnd_scheduled</item>
+    </array>
+    <array name="mi3_night_mode_values">
+        <item>@string/p_off</item>
+        <item>@string/p_scheduled</item>
+    </array>
+    <array name="notification_filter_modes_entries">
+        <item>@string/filter_mode_none</item>
+        <item>@string/filter_mode_whitelist</item>
+        <item>@string/filter_mode_blacklist</item>
+    </array>
+    <array name="notification_filter_submodes_entries">
+        <item>@string/filter_submode_at_least_one</item>
+        <item>@string/filter_submode_all</item>
+    </array>
+    <array name="notification_mode">
+        <item>@string/always</item>
+        <item>@string/when_screen_off</item>
+        <item>@string/never</item>
+    </array>
+    <array name="notification_mode_toggle">
+        <item>@string/always</item>
+        <item>@string/never</item>
+    </array>
+    <array name="notification_mode_values">
+        <item>always</item>
+        <item>when_screen_off</item>
+        <item>never</item>
+    </array>
+    <array name="notification_mode_values_toggle">
+        <item>always</item>
+        <item>never</item>
+    </array>
+    <array name="notifications_timeout">
+        <item>@string/no_limit</item>
+        <item>@string/seconds_5</item>
+        <item>@string/seconds_10</item>
+        <item>@string/seconds_20</item>
+        <item>@string/seconds_30</item>
+        <item>@string/minutes_1</item>
+        <item>@string/minutes_5</item>
+        <item>@string/minutes_10</item>
+        <item>@string/minutes_30</item>
+    </array>
+    <array name="notifications_timeout_values">
+        <item>@null</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>60</item>
+        <item>300</item>
+        <item>600</item>
+        <item>1800</item>
+    </array>
+    <array name="orientation">
+        <item>@string/horizontal</item>
+        <item>@string/vertical</item>
+    </array>
+    <array name="orientation_values">
+        <item>horizontal</item>
+        <item>vertical</item>
+    </array>
+    <array name="pebble_activitytracker">
+        <item>Pebble Health</item>
+        <item>Misfit</item>
+        <item>Morpheuz</item>
+    </array>
+    <array name="pebble_activitytracker_values">
+        <item>4</item>
+        <item>3</item>
+        <item>1</item>
+    </array>
+    <array name="pebble_privacymode">
+        <item>@string/pref_pebble_privacy_mode_off</item>
+        <item>@string/pref_pebble_privacy_mode_content</item>
+        <item>@string/pref_pebble_privacy_mode_complete</item>
+    </array>
+    <array name="pebble_privacymode_values">
+        <item>@string/p_pebble_privacy_mode_off</item>
+        <item>@string/p_pebble_privacy_mode_content</item>
+        <item>@string/p_pebble_privacy_mode_complete</item>
+    </array>
+    <array name="pref_amazfitbip_language">
+        <item>@string/automatic</item>
+        <item>@string/simplified_chinese</item>
+        <item>@string/traditional_chinese</item>
+        <item>@string/english</item>
+        <item>@string/spanish</item>
+        <item>@string/german</item>
+        <item>@string/italian</item>
+        <item>@string/french</item>
+        <item>@string/portuguese</item>
+        <item>@string/turkish</item>
+        <item>@string/russian</item>
+    </array>
+    <array name="pref_amazfitbip_language_values">
+        <item>auto</item>
+        <item>zh_CN</item>
+        <item>zh_TW</item>
+        <item>en_US</item>
+        <item>es_ES</item>
+        <item>de_DE</item>
+        <item>it_IT</item>
+        <item>fr_FR</item>
+        <item>pt_BR</item>
+        <item>tr_TR</item>
+        <item>ru_RU</item>
+    </array>
+    <array name="pref_amazfitcor_language">
+        <item>@string/automatic</item>
+        <item>@string/simplified_chinese</item>
+        <item>@string/traditional_chinese</item>
+        <item>@string/english</item>
+        <item>@string/spanish</item>
+        <item>@string/russian</item>
+    </array>
+    <array name="pref_amazfitcor_language_values">
+        <item>auto</item>
+        <item>zh_CN</item>
+        <item>zh_TW</item>
+        <item>en_US</item>
+        <item>es_ES</item>
+        <item>ru_RU</item>
+    </array>
+    <array name="pref_bip_display_items">
+        <item>@string/menuitem_shortcut_alipay</item>
+        <item>@string/menuitem_shortcut_weather</item>
+        <item>@string/menuitem_status</item>
+        <item>@string/menuitem_activity</item>
+        <item>@string/menuitem_weather</item>
+        <item>@string/menuitem_alarm</item>
+        <item>@string/menuitem_timer</item>
+        <item>@string/menuitem_compass</item>
+        <item>@string/menuitem_settings</item>
+        <item>@string/menuitem_alipay</item>
+    </array>
+    <array name="pref_bip_display_items_default">
+        <item>@string/p_menuitem_status</item>
+        <item>@string/p_menuitem_activity</item>
+        <item>@string/p_menuitem_weather</item>
+        <item>@string/p_menuitem_alarm</item>
+        <item>@string/p_menuitem_timer</item>
+        <item>@string/p_menuitem_compass</item>
+        <item>@string/p_menuitem_settings</item>
+    </array>
+    <array name="pref_bip_display_items_values">
+        <item>@string/p_menuitem_shortcut_alipay</item>
+        <item>@string/p_menuitem_shortcut_weather</item>
+        <item>@string/p_menuitem_status</item>
+        <item>@string/p_menuitem_activity</item>
+        <item>@string/p_menuitem_weather</item>
+        <item>@string/p_menuitem_alarm</item>
+        <item>@string/p_menuitem_timer</item>
+        <item>@string/p_menuitem_compass</item>
+        <item>@string/p_menuitem_settings</item>
+        <item>@string/p_menuitem_alipay</item>
+    </array>
+    <array name="pref_call_privacy_mode">
+        <item>@string/pref_call_privacy_mode_off</item>
+        <item>@string/pref_call_privacy_mode_name</item>
+        <item>@string/pref_call_privacy_mode_number</item>
+        <item>@string/pref_call_privacy_mode_complete</item>
+    </array>
+    <array name="pref_call_privacy_mode_values">
+        <item>@string/p_call_privacy_mode_off</item>
+        <item>@string/p_call_privacy_mode_name</item>
+        <item>@string/p_call_privacy_mode_number</item>
+        <item>@string/p_call_privacy_mode_complete</item>
+    </array>
+    <array name="pref_cor_display_items">
+        <item>@string/menuitem_status</item>
+        <item>@string/menuitem_notifications</item>
+        <item>@string/menuitem_activity</item>
+        <item>@string/menuitem_weather</item>
+        <item>@string/menuitem_alarm</item>
+        <item>@string/menuitem_timer</item>
+        <item>@string/menuitem_settings</item>
+        <item>@string/menuitem_alipay</item>
+        <item>@string/menuitem_music</item>
+    </array>
+    <array name="pref_cor_display_items_default">
+        <item>@string/p_menuitem_status</item>
+        <item>@string/p_menuitem_notifications</item>
+        <item>@string/p_menuitem_activity</item>
+        <item>@string/p_menuitem_weather</item>
+        <item>@string/p_menuitem_alarm</item>
+        <item>@string/p_menuitem_timer</item>
+        <item>@string/p_menuitem_settings</item>
+        <item>@string/p_menuitem_music</item>
+    </array>
+    <array name="pref_cor_display_items_values">
+        <item>@string/p_menuitem_status</item>
+        <item>@string/p_menuitem_notifications</item>
+        <item>@string/p_menuitem_activity</item>
+        <item>@string/p_menuitem_weather</item>
+        <item>@string/p_menuitem_alarm</item>
+        <item>@string/p_menuitem_timer</item>
+        <item>@string/p_menuitem_settings</item>
+        <item>@string/p_menuitem_alipay</item>
+        <item>@string/p_menuitem_music</item>
+    </array>
+    <array name="pref_entries_unit_system">
+        <item>@string/unit_metric</item>
+        <item>@string/unit_imperial</item>
+    </array>
+    <array name="pref_language_options">
+        <item>System Default</item>
+        <item>Català</item>
+        <item>Čeština</item>
+        <item>Deutsch</item>
+        <item>English</item>
+        <item>Español</item>
+        <item>Français</item>
+        <item>Polski</item>
+        <item>Русский</item>
+        <item>Tiếng Việt</item>
+        <item>Türkçe</item>
+        <item>Українська</item>
+        <item>한국어</item>
+        <item>日本語</item>
+        <item>Magyar</item>
+        <item>Slovenčina</item>
+    </array>
+    <array name="pref_language_values">
+        <item>default</item>
+        <item>ca</item>
+        <item>cs</item>
+        <item>de</item>
+        <item>en</item>
+        <item>es</item>
+        <item>fr</item>
+        <item>pl</item>
+        <item>ru</item>
+        <item>vi</item>
+        <item>tr</item>
+        <item>uk</item>
+        <item>ko</item>
+        <item>ja</item>
+        <item>hu</item>
+        <item>sk</item>
+    </array>
+    <array name="pref_mi2_display_items">
+        <item>@string/chart_steps</item>
+        <item>@string/distance</item>
+        <item>@string/calories</item>
+        <item>@string/heart_rate</item>
+        <item>@string/battery</item>
+    </array>
+    <array name="pref_mi2_display_items_default">
+        <item>@string/p_steps</item>
+        <item>@string/p_distance</item>
+        <item>@string/p_calories</item>
+        <item>@string/p_heart_rate</item>
+        <item>@string/p_battery</item>
+    </array>
+    <array name="pref_mi2_display_items_values">
+        <item>@string/p_steps</item>
+        <item>@string/p_distance</item>
+        <item>@string/p_calories</item>
+        <item>@string/p_heart_rate</item>
+        <item>@string/p_battery</item>
+    </array>
+    <array name="pref_miband3_display_items">
+        <item>@string/menuitem_notifications</item>
+        <item>@string/menuitem_weather</item>
+        <item>@string/menuitem_activity</item>
+        <item>@string/menuitem_more</item>
+        <item>@string/menuitem_status</item>
+        <item>@string/heart_rate</item>
+        <item>@string/menuitem_timer</item>
+        <item>@string/menuitem_nfc</item>
+    </array>
+    <array name="pref_miband3_display_items_default">
+        <item>@string/p_menuitem_notifications</item>
+        <item>@string/p_menuitem_weather</item>
+        <item>@string/p_menuitem_activity</item>
+        <item>@string/p_menuitem_more</item>
+        <item>@string/p_menuitem_status</item>
+        <item>@string/p_heart_rate</item>
+    </array>
+    <array name="pref_miband3_display_items_values">
+        <item>@string/p_menuitem_notifications</item>
+        <item>@string/p_menuitem_weather</item>
+        <item>@string/p_menuitem_activity</item>
+        <item>@string/p_menuitem_more</item>
+        <item>@string/p_menuitem_status</item>
+        <item>@string/p_heart_rate</item>
+        <item>@string/p_menuitem_timer</item>
+        <item>@string/p_menuitem_nfc</item>
+    </array>
+    <array name="pref_miband3_language">
+        <item>@string/automatic</item>
+        <item>@string/simplified_chinese</item>
+        <item>@string/traditional_chinese</item>
+        <item>@string/english</item>
+        <item>@string/spanish</item>
+        <item>@string/german</item>
+        <item>@string/italian</item>
+        <item>@string/french</item>
+        <item>@string/portuguese</item>
+        <item>@string/dutch</item>
+        <item>@string/polish</item>
+        <item>@string/turkish</item>
+        <item>@string/russian</item>
+        <item>@string/ukrainian</item>
+        <item>@string/arabic</item>
+        <item>@string/indonesian</item>
+        <item>@string/thai</item>
+        <item>@string/vietnamese</item>
+        <item>@string/japanese</item>
+        <item>@string/korean</item>
+    </array>
+    <array name="pref_miband3_language_values">
+        <item>auto</item>
+        <item>zh_CN</item>
+        <item>zh_TW</item>
+        <item>en_US</item>
+        <item>es_ES</item>
+        <item>de_DE</item>
+        <item>it_IT</item>
+        <item>fr_FR</item>
+        <item>pt_PT</item>
+        <item>nl_NL</item>
+        <item>pl_PL</item>
+        <item>tr_TR</item>
+        <item>ru_RU</item>
+        <item>uk_UA</item>
+        <item>ar_SA</item>
+        <item>id_ID</item>
+        <item>th_TH</item>
+        <item>vi_VN</item>
+        <item>ja_JP</item>
+        <item>ko_KO</item>
+    </array>
+    <array name="pref_theme_options">
+        <item>@string/pref_theme_light</item>
+        <item>@string/pref_theme_dark</item>
+    </array>
+    <array name="pref_theme_values">
+        <item>@string/pref_theme_value_light</item>
+        <item>@string/pref_theme_value_dark</item>
+    </array>
+    <array name="pref_timeformat_entries">
+        <item>@string/automatic</item>
+        <item>@string/timeformat_24h</item>
+        <item>@string/timeformat_am_pm</item>
+    </array>
+    <array name="pref_timeformat_values">
+        <item>@string/p_timeformat_auto</item>
+        <item>@string/p_timeformat_24h</item>
+        <item>@string/p_timeformat_am_pm</item>
+    </array>
+    <array name="pref_values_unit_system">
+        <item>@string/p_unit_metric</item>
+        <item>@string/p_unit_imperial</item>
+    </array>
+    <array name="prefs_find_phone">
+        <item>@string/off</item>
+        <item>@string/on</item>
+        <item>@string/maximum_duration</item>
+    </array>
+    <array name="prefs_find_phone_values">
+        <item>@string/p_off</item>
+        <item>@string/p_on</item>
+        <item>@string/p_scheduled</item>
+    </array>
+    <array name="prefs_heartrate_measurement_interval">
+        <item>@string/off</item>
+        <item>@string/interval_one_minute</item>
+        <item>@string/interval_five_minutes</item>
+        <item>@string/interval_ten_minutes</item>
+        <item>@string/interval_thirty_minutes</item>
+        <item>@string/interval_one_hour</item>
+    </array>
+    <array name="prefs_heartrate_measurement_interval_values">
+        <item>@null</item>
+        <item>60</item>
+        <item>300</item>
+        <item>600</item>
+        <item>1800</item>
+        <item>3600</item>
+    </array>
+    <array name="prefs_zetime_heartrate_measurement_interval">
+        <item>@string/off</item>
+        <item>@string/interval_five_minutes</item>
+        <item>@string/interval_ten_minutes</item>
+        <item>@string/interval_fifteen_minutes</item>
+        <item>@string/interval_thirty_minutes</item>
+        <item>@string/interval_forty_five_minutes</item>
+        <item>@string/interval_one_hour</item>
+    </array>
+    <array name="prefs_zetime_heartrate_measurement_interval_values">
+        <item>@null</item>
+        <item>300</item>
+        <item>600</item>
+        <item>900</item>
+        <item>1800</item>
+        <item>2700</item>
+        <item>3600</item>
+    </array>
+    <array name="vibration_profile">
+        <item>@string/vibration_profile_staccato</item>
+        <item>@string/vibration_profile_short</item>
+        <item>@string/vibration_profile_medium</item>
+        <item>@string/vibration_profile_long</item>
+        <item>@string/vibration_profile_waterdrop</item>
+        <item>@string/vibration_profile_ring</item>
+        <item>@string/vibration_profile_alarm_clock</item>
+    </array>
+    <array name="vibration_profile_values">
+        <item>@string/p_staccato</item>
+        <item>@string/p_short</item>
+        <item>@string/p_medium</item>
+        <item>@string/p_long</item>
+        <item>@string/p_waterdrop</item>
+        <item>@string/p_ring</item>
+        <item>@string/p_alarm_clock</item>
+    </array>
+    <array name="wearside">
+        <item>@string/left</item>
+        <item>@string/right</item>
+    </array>
+    <array name="wearside_values">
+        <item>left</item>
+        <item>right</item>
+    </array>
+    <array name="zetime_analog_mode">
+        <item>@string/zetime_analog_mode_hands</item>
+        <item>@string/zetime_analog_mode_handsandsteps</item>
+    </array>
+    <array name="zetime_analog_mode_values">
+        <item>@null</item>
+        <item>1</item>
+    </array>
+    <array name="zetime_calories_type">
+        <item>@string/zetime_calories_type_active</item>
+        <item>@string/zetime_calories_type_all</item>
+    </array>
+    <array name="zetime_calories_type_values">
+        <item>@null</item>
+        <item>1</item>
+    </array>
+    <array name="zetime_date_format">
+        <item>@string/zetime_date_format_1</item>
+        <item>@string/zetime_date_format_2</item>
+        <item>@string/zetime_date_format_3</item>
+    </array>
+    <array name="zetime_date_format_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </array>
+    <array name="zetime_do_not_disturb">
+        <item>@string/mi2_dnd_off</item>
+        <item>@string/mi2_dnd_scheduled</item>
+    </array>
+    <array name="zetime_do_not_disturb_values">
+        <item>@string/p_off</item>
+        <item>@string/p_scheduled</item>
+    </array>
+    <array name="zetime_signaling_types">
+        <item>@string/zetime_signaling_vibrate_once</item>
+        <item>@string/zetime_signaling_vibrate_twice</item>
+        <item>@string/zetime_signaling_vibrate</item>
+        <item>@string/zetime_signaling_beep_once</item>
+        <item>@string/zetime_signaling_beep_twice</item>
+        <item>@string/zetime_signaling_beep</item>
+        <item>@string/zetime_signaling_vibrate_beep_once</item>
+        <item>@string/zetime_signaling_vibrate_beep</item>
+        <item>@string/zetime_signaling_none</item>
+    </array>
+    <array name="zetime_signaling_types_values">
+        <item>2</item>
+        <item>4</item>
+        <item>7</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+    </array>
+</resources>

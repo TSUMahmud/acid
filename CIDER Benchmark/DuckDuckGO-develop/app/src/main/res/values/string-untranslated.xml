@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2019 DuckDuckGo
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <!-- Favorites widget -->
+    <string name="addFavoriteMenuTitleHighlighted">👋 Add Favorite</string>
+    <string name="widgetConfigurationTitleText">Choose Theme</string>
+    <string name="widgetConfigurationSystemThemeOption">System default</string>
+    <string name="widgetConfigurationLightThemeOption">Light</string>
+    <string name="widgetConfigurationDarkThemeOption">Dark</string>
+    <string name="widgetConfigurationAddWidgetOption">Add widget</string>
+    <string name="searchWidgetEmtpyFavoritesHint">No favorites added yet</string>
+    <string name="searchWidgetEmtpyFavoritesCta">Add Favorite</string>
+    <string name="daxFavoritesOnboardingCtaText"><![CDATA[Visit your favorite sites in a flash!<br/><br/>Go to a site you love. Then tap the \" &#x2807;\" icon and select Add Favorite.]]></string>
+    <string name="daxFavoritesOnboardingCtaContentDescription">Visit your favorite sites in a flash! Go to a site you love. Then tap the browser menu icon and select Add Favorite.</string>
+    <string name="widgetConfigurationActivityTitle">Widget Configuration</string>
+    <string name="favoritesWidgetLabel">Favorites Widget</string>
+    <string name="searchWidgetLabel">Search Widget</string>
+
+    <!-- Email -->
+    <string name="emailNotSupported">Device not supported</string>
+    <string name="emailNotSupportedExplanation">Email Protection allows you to create private email addresses that remove email trackers. We need to encrypt and store these addresses you create locally on your device. Because your device does not support encrypted storage, Email Protection is unavailable.</string>
+
+    <!-- Settings Activity -->
+    <string name="settingsLightTheme">Light</string>
+    <string name="settingsTheme">Theme</string>
+    <string name="settingsDarkTheme">Dark</string>
+    <string name="settingsSystemTheme">System Default</string>
+
+    <!-- Theme Settings -->
+    <string name="settingsThemeDialogSave">Set Theme</string>
+
+    <!-- App links -->
+    <string name="appLinkSnackBarAction">Open in app</string>
+    <string name="appLinkMultipleSnackBarAction">Choose app</string>
+    <string name="appLinkSnackBarMessage">You can open this link in %s.</string>
+    <string name="appLinkMultipleSnackBarMessage">You can open this link in other apps.</string>
+    <string name="appLinkIntentChooserTitle">Open with</string>
+    <string name="appLinkMenuItemTitle">Open in App</string>
+
+    <!-- App Links Settings -->
+    <string name="settingsTitleAppLinks">Open Links in Apps</string>
+    <string name="settingsTitleAppLinksDialog">Open links in apps</string>
+    <string name="settingsAppLinksAskEveryTime">Ask every time</string>
+    <string name="settingsAppLinksAlways">Always</string>
+    <string name="settingsAppLinksNever">Never</string>
+
+    <!-- Bookmark folders -->
+    <string name="bookmarkDialogTitleEdit">Edit Bookmark</string>
+    <string name="favoriteDialogTitleEdit">Edit Favorite</string>
+    <string name="locationLabel">Location</string>
+    <string name="folderLocationTitle">Select Location</string>
+    <string name="addFolder">Add Folder</string>
+    <string name="editFolder">Edit Folder</string>
+    <string name="bookmarkFolderDeleteDialogMessage">"Are you sure you want to delete "</string>
+    <string name="bookmarkFolderEmpty">Empty</string>
+
+    <plurals name="bookmarkFolderDeleteDialogMessage">
+        <item quantity="one">%s%s and %d item?</item>
+        <item quantity="other">%s%s and %d items?</item>
+    </plurals>
+
+    <plurals name="bookmarkFolderItems">
+        <item quantity="one">%d item</item>
+        <item quantity="other">%d items</item>
+    </plurals>
+
+    <!-- Fireproof CTA Experiment -->
+    <string name="daxFireproofCtaText"><![CDATA[Your data is toast!<br/><br/>Want me to \"Fireproof\" sites when you sign in? That way, you won\'t be signed out when you burn your data.<br/><br/>You can always change this later in settings.]]></string>
+    <string name="daxFireproofKeepMeSignedInButton">Keep Me Signed In To Sites</string>
+    <string name="daxFireproofBurnEverythingButton">Burn Everything</string>
+    <string name="daxFireproofSettingsToggle">Fireproof Sites When Signing In</string>
+    <string name="daxFireproofSettingsInfo">The Fire Button erases data such as cookies, which keep you signed in to sites. You can Fireproof sites to keep these cookies and stay signed in. This retains some data that sites keep about you. We still block third-party trackers found on Fireproof sites.</string>
+
+</resources>

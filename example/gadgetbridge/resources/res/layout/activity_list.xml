@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/list_activity_swipe_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ListView android:id="@+id/itemListView" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:id="@+id/fab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp" android:tint="@android:color/white" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" app:srcCompat="@drawable/ic_action_fetch_activity_data"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

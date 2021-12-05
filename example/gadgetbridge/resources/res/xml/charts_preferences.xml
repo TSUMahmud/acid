@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <PreferenceCategory android:title="@string/activity_prefs_charts" android:key="pref_charts">
+        <EditTextPreference android:maxLength="3" android:title="@string/activity_prefs_chart_max_heart_rate" android:key="chart_max_heart_rate" android:defaultValue="250" android:inputType="number"/>
+        <EditTextPreference android:maxLength="3" android:title="@string/activity_prefs_chart_min_heart_rate" android:key="chart_min_heart_rate" android:defaultValue="10" android:inputType="number"/>
+        <CheckBoxPreference android:layout="@layout/preference_checkbox" android:title="@string/pref_title_chart_heartrate_color" android:key="chart_heartrate_color" android:defaultValue="false" android:summaryOn="@string/pref_chart_heartrate_color_red" android:summaryOff="@string/pref_chart_heartrate_color_orange"/>
+        <CheckBoxPreference android:layout="@layout/preference_checkbox" android:title="@string/pref_title_charts_swipe" android:key="charts_allow_swipe" android:defaultValue="true"/>
+        <CheckBoxPreference android:layout="@layout/preference_checkbox" android:title="@string/pref_title_chart_sleep_rolling_24_hour" android:key="chart_sleep_range_24h" android:defaultValue="false" android:summaryOn="@string/pref_chart_sleep_rolling_24_on" android:summaryOff="@string/pref_chart_sleep_rolling_24_off"/>
+        <CheckBoxPreference android:layout="@layout/preference_checkbox" android:title="@string/pref_title_charts_average" android:key="charts_show_average" android:defaultValue="true"/>
+        <CheckBoxPreference android:layout="@layout/preference_checkbox" android:title="@string/pref_title_charts_range" android:key="charts_range" android:defaultValue="false" android:summaryOn="@string/pref_charts_range_on" android:summaryOff="@string/pref_charts_range_off"/>
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <PreferenceScreen android:icon="@drawable/ic_do_not_disturb" android:persistent="false" android:title="@string/mi2_prefs_do_not_disturb" android:key="screen_do_not_disturb" android:summary="@string/mi2_prefs_do_not_disturb_summary">
+        <PreferenceCategory android:title="@string/mi2_prefs_do_not_disturb"/>
+        <ListPreference android:entries="@array/mi2_do_not_disturb" android:title="@string/mi2_prefs_do_not_disturb" android:key="do_not_disturb" android:summary="%s" android:defaultValue="@string/p_off" android:entryValues="@array/mi2_do_not_disturb_values"/>
+        <nodomain.freeyourgadget.gadgetbridge.util.XTimePreference android:title="@string/mi2_prefs_do_not_disturb_start" android:key="do_not_disturb_start" android:defaultValue="01:00"/>
+        <nodomain.freeyourgadget.gadgetbridge.util.XTimePreference android:title="@string/mi2_prefs_do_not_disturb_end" android:key="do_not_disturb_end" android:defaultValue="06:00"/>
+    </PreferenceScreen>
+</androidx.preference.PreferenceScreen>

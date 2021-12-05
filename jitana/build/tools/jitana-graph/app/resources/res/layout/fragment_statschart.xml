@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.github.mikephil.charting.charts.HorizontalBarChart android:id="@+id/statschart" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="20" android:layout_below="@+id/statsXAxisText" android:layout_toStartOf="@+id/statsYAxisText" android:layout_alignParentStart="true"/>
+    <TextView android:id="@+id/statsXAxisText" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stats_x_axis_label" android:layout_alignParentTop="true" android:layout_alignParentStart="true" android:layout_alignParentEnd="true"/>
+    <TextView android:id="@+id/statsYAxisText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stats_y_axis_label" android:singleLine="true" android:layout_centerVertical="true" android:translationX="40dp" android:rotation="90" android:layout_marginStart="-95dp" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

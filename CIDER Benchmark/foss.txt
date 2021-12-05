@@ -1,0 +1,8 @@
+Callback incompatibilities
+
+
+Invocation incompatibilities
+
+Method Landroid/widget/ProgressBar;.setVisibility(I)V in class 22:Lde/baumann/browser/Activity/BrowserActivity;.updateProgress(I)V not found for API <= 27
+Method Landroid/widget/ImageView;.setVisibility(I)V in class 22:Lde/baumann/browser/Activity/BrowserActivity$37;.getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View; not found for API 24
+

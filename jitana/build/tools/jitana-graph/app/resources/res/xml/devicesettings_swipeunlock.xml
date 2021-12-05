@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <SwitchPreference android:icon="@drawable/ic_lock_open" android:layout="@layout/preference_checkbox" android:title="@string/mi3_prefs_band_screen_unlock" android:key="swipe_unlock" android:summary="@string/mi3_prefs_band_screen_unlock_summary" android:defaultValue="false"/>
+</androidx.preference.PreferenceScreen>

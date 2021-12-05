@@ -1,0 +1,27 @@
+Callback incompatibilities
+
+Method getOutline(Landroid/view/View;Landroid/graphics/Outline;)V in  class 22:Lorg/kore/kolabnotes/android/Utils$1;.getOutline(Landroid/view/View;Landroid/graphics/Outline;)V not found for API <= 19
+Method getAccessibilityClassName()Ljava/lang/CharSequence; in  class 22:Lorg/kore/kolabnotes/android/draweditor/ToolButtonGroup;.getAccessibilityClassName()Ljava/lang/CharSequence; not found for API <= 22
+Method onAttach(Landroid/content/Context;)V in  class 22:Lorg/kore/kolabnotes/android/fragment/DrawEditorFragment;.onAttach(Landroid/content/Context;)V not found for API <= 22
+Method onViewStateRestored(Landroid/os/Bundle;)V in  class 22:Lorg/kore/kolabnotes/android/fragment/DrawEditorFragment;.onViewStateRestored(Landroid/os/Bundle;)V not found for API <= 16
+Method getContext()Landroid/content/Context; in  class 22:Lorg/kore/kolabnotes/android/fragment/OverviewFragment;.getContext()Landroid/content/Context; not found for API <= 22
+Method onAttach(Landroid/content/Context;)V in  class 22:Lorg/kore/kolabnotes/android/fragment/TagListFragment;.onAttach(Landroid/content/Context;)V not found for API <= 22
+Method isValidFragment(Ljava/lang/String;)Z in  class 22:Lorg/kore/kolabnotes/android/setting/SettingsActivity;.isValidFragment(Ljava/lang/String;)Z not found for API <= 18
+
+Invocation incompatibilities
+
+Method Lorg/kore/kolab/notes/Attachment;.getFileName()Ljava/lang/String; in class 22:Lorg/kore/kolabnotes/android/content/AttachmentRepository;.getUriFromAttachment(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/kore/kolab/notes/Attachment;)Landroid/net/Uri; not found for API <= 26
+Method Landroid/widget/ImageView;.setVisibility(I)V in class 22:Lorg/kore/kolabnotes/android/fragment/PreviewFragment;.displayImage(Lorg/kore/kolabnotes/android/content/ActiveAccount;Ljava/lang/String;Lorg/kore/kolab/notes/Attachment;)V not found for API 24
+Method Lorg/kore/kolab/notes/Note;.getClassification()Lorg/kore/kolab/notes/Note$Classification; in class 22:Lorg/kore/kolabnotes/android/Utils;.differentMutableData(Lorg/kore/kolab/notes/Note;Lorg/kore/kolab/notes/Note;)Z not found for API <= 26
+Method Lorg/kore/kolab/notes/Note;.getColor()Lorg/kore/kolab/notes/Color; in class 22:Lorg/kore/kolabnotes/android/Utils;.differentMutableData(Lorg/kore/kolab/notes/Note;Lorg/kore/kolab/notes/Note;)Z not found for API <= 26
+Method Lorg/kore/kolab/notes/Note;.getCategories()Ljava/util/Set; in class 22:Lorg/kore/kolabnotes/android/Utils;.differentMutableData(Lorg/kore/kolab/notes/Note;Lorg/kore/kolab/notes/Note;)Z not found for API <= 26
+Method Landroid/app/Fragment;.onViewStateRestored(Landroid/os/Bundle;)V in class 22:Lorg/kore/kolabnotes/android/fragment/DrawEditorFragment;.onViewStateRestored(Landroid/os/Bundle;)V not found for API <= 16
+Method Landroid/app/Fragment;.getContext()Landroid/content/Context; in class 22:Lorg/kore/kolabnotes/android/fragment/TagListFragment;.getContext()Landroid/content/Context; not found for API <= 22
+Method Landroid/app/Fragment;.getContext()Landroid/content/Context; in class 22:Lorg/kore/kolabnotes/android/fragment/OverviewFragment;.getContext()Landroid/content/Context; not found for API <= 22
+Method Landroid/widget/ImageView;.setVisibility(I)V in class 22:Lorg/kore/kolabnotes/android/fragment/PreviewFragment;.displayPreview(Lorg/kore/kolabnotes/android/content/ActiveAccount;Ljava/lang/String;Lorg/kore/kolab/notes/Attachment;)V not found for API 24
+Method Landroid/widget/ImageView;.setVisibility(I)V in class 22:Lorg/kore/kolabnotes/android/adapter/NoteAdapter;.onBindViewHolder(Lorg/kore/kolabnotes/android/adapter/NoteAdapter$ViewHolder;I)V not found for API 24
+Method Landroid/app/Fragment;.onAttach(Landroid/content/Context;)V in class 22:Lorg/kore/kolabnotes/android/fragment/TagListFragment;.onAttach(Landroid/content/Context;)V not found for API <= 22
+Method Landroid/app/Fragment;.getContext()Landroid/content/Context; in class 22:Lorg/kore/kolabnotes/android/fragment/TagListFragment;.getContext()Landroid/content/Context; not found for API <= 22
+Method Lorg/kore/kolab/notes/Attachment;.getId()Ljava/lang/String; in class 22:Lorg/kore/kolabnotes/android/content/AttachmentRepository;.doInsert(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/kore/kolab/notes/Attachment;J)J not found for API <= 26
+Method Lorg/kore/kolab/notes/Attachment;.getData()[B in class 22:Lorg/kore/kolabnotes/android/content/AttachmentRepository;.doInsert(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/kore/kolab/notes/Attachment;J)J not found for API <= 26
+Method Lorg/kore/kolab/notes/Attachment;.getFileName()Ljava/lang/String; in class 22:Lorg/kore/kolabnotes/android/content/AttachmentRepository;.doInsert(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/kore/kolab/notes/Attachment;J)J not found for API <= 26

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.gridlayout.widget.GridLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" app:columnCount="2">
+    <nodomain.freeyourgadget.gadgetbridge.activities.charts.CustomBarChart android:id="@+id/livechart_steps_per_minute_current" app:layout_columnWeight="1" app:layout_rowWeight="1"/>
+    <nodomain.freeyourgadget.gadgetbridge.activities.charts.CustomBarChart android:id="@+id/livechart_steps_total" app:layout_columnWeight="1" app:layout_rowWeight="1"/>
+    <TextView android:id="@+id/livechart_max_heart_rate" app:layout_columnSpan="2" app:layout_columnWeight="1"/>
+    <com.github.mikephil.charting.charts.LineChart android:id="@+id/livechart_steps_per_minute_history" app:layout_columnSpan="2" app:layout_columnWeight="1" app:layout_rowWeight="1"/>
+</androidx.gridlayout.widget.GridLayout>

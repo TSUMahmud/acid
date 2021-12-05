@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <MultiSelectListPreference android:icon="@drawable/ic_widgets" android:entries="@array/pref_cor_display_items" android:title="@string/mi2_prefs_display_items" android:key="display_items" android:summary="@string/mi2_prefs_display_items_summary" android:defaultValue="@array/pref_cor_display_items_default" android:dialogTitle="@string/mi2_prefs_display_items" android:entryValues="@array/pref_cor_display_items_values"/>
+    <ListPreference android:icon="@drawable/ic_language" android:entries="@array/pref_amazfitcor_language" android:title="@string/pref_title_language" android:key="language" android:summary="%s" android:defaultValue="auto" android:entryValues="@array/pref_amazfitcor_language_values"/>
+</androidx.preference.PreferenceScreen>

@@ -1,0 +1,43 @@
+"FOSS Browser" ist eine komplett freie (wie in Freiheit)/quelloffene Software für Android. FOSS Browser zeigt keine Werbung und sammelt keine Daten. Das Ziel ist ein einfacher und kleiner, aber funktionsreicher und datenschutzfreundlicher Browser mit einer modernen Benutzeroberfläche. Deine Privatsphäre - deine Daten!
+
+<b>Projektseite mit weiteren Informationen: https://github.com/scoute-dich/browser/</b>
+
+-------------------------------------------------
+<b>SICHERHEIT/DATEN</b>
+-------------------------------------------------
+
+• komplett quelloffen
+• keine Tracker
+• keine unnötigen Berechtigungen
+• Cookies von Drittanbietern deaktiviert
+• aktiviere/deaktiviere Cookies, Javascript, Standort, Verlauf und mehr
+• erweiterte Einstellungen für Javascript, Cookies und DOM-Speicher (Lesezeichen-/Domain basierend)
+• do not track me / GPC (Globale Privatsphärenkontrolle)
+• Schutz vor Browser-Fingerprinting
+• AdBlocker
+• Daten beim Verlassen löschen (optional)
+
+-------------------------------------------------
+<b>UI/HANDHABUNG</b>
+-------------------------------------------------
+
+• für Einhand-Benutzung optimiert (Toolbar unten)
+• Tabkontrolle (wechseln, öffnen, schließen beliebig vieler Tabs)
+• Material Design
+• Toolbar beim browsen ausblenden (optional)
+• Navigations-Knopf (bei ausgeblendeter Toolbar, optional)
+• Schnelleinstellungen für die wichtigsten Dinge
+• Gestensteuerung (Toolbar und Toolbarknöpfe)
+• Wechsel zwischen Mobiler- und Desktopansicht
+• Wechsel zwischen Tag- Und Nachtansciht
+
+-------------------------------------------------
+<b>NICE TO HAVE</b>
+-------------------------------------------------
+
+• Daten sichern
+• kleine Größe
+• auf der Seite suchen
+• Websuche (über geteilten Text)
+• PDF speichern
+• Links in anderen Anwendungen öffnen (z.B. YouTube)

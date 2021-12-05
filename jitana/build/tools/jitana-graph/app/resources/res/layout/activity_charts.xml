@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/activity_swipe_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/charts_main_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <nodomain.freeyourgadget.gadgetbridge.activities.charts.NonSwipeableViewPager android:id="@+id/charts_pager" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <com.google.android.material.tabs.TabLayout android:layout_gravity="top" android:id="@+id/charts_pagerTabStrip" android:layout_width="match_parent" android:layout_height="wrap_content" app:tabMode="0"/>
+        </nodomain.freeyourgadget.gadgetbridge.activities.charts.NonSwipeableViewPager>
+        <LinearLayout android:gravity="fill_horizontal" android:orientation="horizontal" android:id="@+id/charts_date_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center_horizontal" android:id="@+id/charts_text_date" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Today" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="fill_horizontal" android:orientation="horizontal" android:id="@+id/charts_date_button_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/charts_previous_month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="&lt;&lt;&lt;" android:layout_weight="1"/>
+            <Button android:id="@+id/charts_previous_week" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="&lt;&lt;" android:layout_weight="1"/>
+            <Button android:id="@+id/charts_previous_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="&lt;" android:layout_weight="1"/>
+            <Button android:id="@+id/charts_next_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="&gt;" android:layout_weight="1"/>
+            <Button android:id="@+id/charts_next_week" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="&gt;&gt;" android:layout_weight="1"/>
+            <Button android:id="@+id/charts_next_month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="&gt;&gt;&gt;" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

@@ -1,0 +1,29 @@
+API callback compatibility issues
+
+#1
+API: Landroid/preference/PreferenceActivity;.isValidFragment(Ljava/lang/String;)
+Usage : Lcom/quaap/launchtime/ColorSettingsActivity;.isValidFragment(Ljava/lang/String;)
+Incompatible API Levels: <=18
+
+#2
+API: Landroid/preference/PreferenceActivity;.isValidFragment(Ljava/lang/String;)
+Usage : Lcom/quaap/launchtime/SettingsActivity;.isValidFragment(Ljava/lang/String;)
+Incompatible API Levels: <=18
+
+
+API invocation compatibility issues
+
+#1
+API: Landroid/preference/PreferenceActivity;.isValidFragment(Ljava/lang/String;)
+Usage : Lcom/quaap/launchtime/ColorSettingsActivity;.isValidFragment(Ljava/lang/String;)
+Incompatible API Levels: <=18
+
+#2
+API: Landroid/preference/PreferenceActivity;.isValidFragment(Ljava/lang/String;)
+Usage : Lcom/quaap/launchtime/SettingsActivity;.isValidFragment(Ljava/lang/String;)
+Incompatible API Levels: <=18
+
+#3
+API: Landroid/content/Context;.getSystemService(Ljava/lang/Class;)
+Usage : Lcom/quaap/launchtime/PinShortcutActivity;.onCreate(Landroid/os/Bundle;)
+Incompatible API Levels: <=22

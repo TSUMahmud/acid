@@ -1,0 +1,50 @@
+Callback incompatibilities
+
+Method onAttach(Landroid/content/Context;)V in  class 22:Lde/tobiasbielefeld/solitaire/classes/CustomPreferenceFragment;.onAttach(Landroid/content/Context;)V not found for API 11
+Method onAttach(Landroid/content/Context;)V in  class 22:Lde/tobiasbielefeld/solitaire/classes/CustomPreferenceFragment;.onAttach(Landroid/content/Context;)V not found for API 12
+Method onAttach(Landroid/content/Context;)V in  class 22:Lde/tobiasbielefeld/solitaire/classes/CustomPreferenceFragment;.onAttach(Landroid/content/Context;)V not found for API 13
+Method onAttach(Landroid/content/Context;)V in  class 22:Lde/tobiasbielefeld/solitaire/classes/CustomPreferenceFragment;.onAttach(Landroid/content/Context;)V not found for API 14
+Method onAttach(Landroid/content/Context;)V in  class 22:Lde/tobiasbielefeld/solitaire/classes/CustomPreferenceFragment;.onAttach(Landroid/content/Context;)V not found for API 15
+Method onAttach(Landroid/content/Context;)V in  class 22:Lde/tobiasbielefeld/solitaire/classes/CustomPreferenceFragment;.onAttach(Landroid/content/Context;)V not found for API 16
+Method onAttach(Landroid/content/Context;)V in  class 22:Lde/tobiasbielefeld/solitaire/classes/CustomPreferenceFragment;.onAttach(Landroid/content/Context;)V not found for API 17
+Method onAttach(Landroid/content/Context;)V in  class 22:Lde/tobiasbielefeld/solitaire/classes/CustomPreferenceFragment;.onAttach(Landroid/content/Context;)V not found for API 18
+Method onAttach(Landroid/content/Context;)V in  class 22:Lde/tobiasbielefeld/solitaire/classes/CustomPreferenceFragment;.onAttach(Landroid/content/Context;)V not found for API 19
+Method onAttach(Landroid/content/Context;)V in  class 22:Lde/tobiasbielefeld/solitaire/classes/CustomPreferenceFragment;.onAttach(Landroid/content/Context;)V not found for API 21
+Method onAttach(Landroid/content/Context;)V in  class 22:Lde/tobiasbielefeld/solitaire/classes/CustomPreferenceFragment;.onAttach(Landroid/content/Context;)V not found for API 22
+Method isValidFragment(Ljava/lang/String;)Z in  class 22:Lde/tobiasbielefeld/solitaire/ui/settings/Settings;.isValidFragment(Ljava/lang/String;)Z not found for API 11
+Method isValidFragment(Ljava/lang/String;)Z in  class 22:Lde/tobiasbielefeld/solitaire/ui/settings/Settings;.isValidFragment(Ljava/lang/String;)Z not found for API 12
+Method isValidFragment(Ljava/lang/String;)Z in  class 22:Lde/tobiasbielefeld/solitaire/ui/settings/Settings;.isValidFragment(Ljava/lang/String;)Z not found for API 13
+Method isValidFragment(Ljava/lang/String;)Z in  class 22:Lde/tobiasbielefeld/solitaire/ui/settings/Settings;.isValidFragment(Ljava/lang/String;)Z not found for API 14
+Method isValidFragment(Ljava/lang/String;)Z in  class 22:Lde/tobiasbielefeld/solitaire/ui/settings/Settings;.isValidFragment(Ljava/lang/String;)Z not found for API 15
+Method isValidFragment(Ljava/lang/String;)Z in  class 22:Lde/tobiasbielefeld/solitaire/ui/settings/Settings;.isValidFragment(Ljava/lang/String;)Z not found for API 16
+Method isValidFragment(Ljava/lang/String;)Z in  class 22:Lde/tobiasbielefeld/solitaire/ui/settings/Settings;.isValidFragment(Ljava/lang/String;)Z not found for API 17
+Method isValidFragment(Ljava/lang/String;)Z in  class 22:Lde/tobiasbielefeld/solitaire/ui/settings/Settings;.isValidFragment(Ljava/lang/String;)Z not found for API 18
+Method isValidFragment(Ljava/lang/String;)Z in  class 22:Lde/tobiasbielefeld/solitaire/ui/settings/SettingsGames;.isValidFragment(Ljava/lang/String;)Z not found for API 11
+Method isValidFragment(Ljava/lang/String;)Z in  class 22:Lde/tobiasbielefeld/solitaire/ui/settings/SettingsGames;.isValidFragment(Ljava/lang/String;)Z not found for API 12
+Method isValidFragment(Ljava/lang/String;)Z in  class 22:Lde/tobiasbielefeld/solitaire/ui/settings/SettingsGames;.isValidFragment(Ljava/lang/String;)Z not found for API 13
+Method isValidFragment(Ljava/lang/String;)Z in  class 22:Lde/tobiasbielefeld/solitaire/ui/settings/SettingsGames;.isValidFragment(Ljava/lang/String;)Z not found for API 14
+Method isValidFragment(Ljava/lang/String;)Z in  class 22:Lde/tobiasbielefeld/solitaire/ui/settings/SettingsGames;.isValidFragment(Ljava/lang/String;)Z not found for API 15
+Method isValidFragment(Ljava/lang/String;)Z in  class 22:Lde/tobiasbielefeld/solitaire/ui/settings/SettingsGames;.isValidFragment(Ljava/lang/String;)Z not found for API 16
+Method isValidFragment(Ljava/lang/String;)Z in  class 22:Lde/tobiasbielefeld/solitaire/ui/settings/SettingsGames;.isValidFragment(Ljava/lang/String;)Z not found for API 17
+Method isValidFragment(Ljava/lang/String;)Z in  class 22:Lde/tobiasbielefeld/solitaire/ui/settings/SettingsGames;.isValidFragment(Ljava/lang/String;)Z not found for API 18
+
+API incompatibilities
+
+Method Landroid/preference/TwoStatePreference;.setChecked(Z)V in class 22:Lde/tobiasbielefeld/solitaire/ui/settings/Settings;.onSharedPreferenceChanged(Landroid/content/SharedPreferences;Ljava/lang/String;)V not found for API 11
+Method Landroid/preference/TwoStatePreference;.setChecked(Z)V in class 22:Lde/tobiasbielefeld/solitaire/ui/settings/Settings;.onSharedPreferenceChanged(Landroid/content/SharedPreferences;Ljava/lang/String;)V not found for API 12
+Method Landroid/preference/TwoStatePreference;.setChecked(Z)V in class 22:Lde/tobiasbielefeld/solitaire/ui/settings/Settings;.onSharedPreferenceChanged(Landroid/content/SharedPreferences;Ljava/lang/String;)V not found for API 13
+Method Landroid/preference/TwoStatePreference;.setChecked(Z)V in class 22:Lde/tobiasbielefeld/solitaire/ui/settings/Settings;.onSharedPreferenceChanged(Landroid/content/SharedPreferences;Ljava/lang/String;)V not found for API 11
+Method Landroid/preference/TwoStatePreference;.setChecked(Z)V in class 22:Lde/tobiasbielefeld/solitaire/ui/settings/Settings;.onSharedPreferenceChanged(Landroid/content/SharedPreferences;Ljava/lang/String;)V not found for API 12
+Method Landroid/preference/TwoStatePreference;.setChecked(Z)V in class 22:Lde/tobiasbielefeld/solitaire/ui/settings/Settings;.onSharedPreferenceChanged(Landroid/content/SharedPreferences;Ljava/lang/String;)V not found for API 13
+Method Landroid/app/Fragment;.onAttach(Landroid/content/Context;)V in class 22:Lde/tobiasbielefeld/solitaire/classes/CustomPreferenceFragment;.onAttach(Landroid/content/Context;)V not found for API 11
+Method Landroid/app/Fragment;.onAttach(Landroid/content/Context;)V in class 22:Lde/tobiasbielefeld/solitaire/classes/CustomPreferenceFragment;.onAttach(Landroid/content/Context;)V not found for API 12
+Method Landroid/app/Fragment;.onAttach(Landroid/content/Context;)V in class 22:Lde/tobiasbielefeld/solitaire/classes/CustomPreferenceFragment;.onAttach(Landroid/content/Context;)V not found for API 13
+Method Landroid/app/Fragment;.onAttach(Landroid/content/Context;)V in class 22:Lde/tobiasbielefeld/solitaire/classes/CustomPreferenceFragment;.onAttach(Landroid/content/Context;)V not found for API 14
+Method Landroid/app/Fragment;.onAttach(Landroid/content/Context;)V in class 22:Lde/tobiasbielefeld/solitaire/classes/CustomPreferenceFragment;.onAttach(Landroid/content/Context;)V not found for API 15
+Method Landroid/app/Fragment;.onAttach(Landroid/content/Context;)V in class 22:Lde/tobiasbielefeld/solitaire/classes/CustomPreferenceFragment;.onAttach(Landroid/content/Context;)V not found for API 16
+Method Landroid/app/Fragment;.onAttach(Landroid/content/Context;)V in class 22:Lde/tobiasbielefeld/solitaire/classes/CustomPreferenceFragment;.onAttach(Landroid/content/Context;)V not found for API 17
+Method Landroid/app/Fragment;.onAttach(Landroid/content/Context;)V in class 22:Lde/tobiasbielefeld/solitaire/classes/CustomPreferenceFragment;.onAttach(Landroid/content/Context;)V not found for API 18
+Method Landroid/app/Fragment;.onAttach(Landroid/content/Context;)V in class 22:Lde/tobiasbielefeld/solitaire/classes/CustomPreferenceFragment;.onAttach(Landroid/content/Context;)V not found for API 19
+Method Landroid/app/Fragment;.onAttach(Landroid/content/Context;)V in class 22:Lde/tobiasbielefeld/solitaire/classes/CustomPreferenceFragment;.onAttach(Landroid/content/Context;)V not found for API 21
+Method Landroid/app/Fragment;.onAttach(Landroid/content/Context;)V in class 22:Lde/tobiasbielefeld/solitaire/classes/CustomPreferenceFragment;.onAttach(Landroid/content/Context;)V not found for API 22
+GAINDroid finished analyzing simple-solitaire

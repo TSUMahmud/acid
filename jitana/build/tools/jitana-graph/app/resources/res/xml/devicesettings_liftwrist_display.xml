@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <PreferenceScreen android:icon="@drawable/ic_arrow_upward" android:persistent="false" android:title="@string/mi2_prefs_activate_display_on_lift" android:key="screen_liftwrist_display">
+        <PreferenceCategory android:title="@string/mi2_prefs_activate_display_on_lift"/>
+        <ListPreference android:entries="@array/activate_display_on_lift" android:title="@string/mi2_prefs_activate_display_on_lift" android:key="activate_display_on_lift_wrist" android:summary="%s" android:defaultValue="@string/p_off" android:entryValues="@array/activate_display_on_lift_values"/>
+        <nodomain.freeyourgadget.gadgetbridge.util.XTimePreference android:title="@string/mi2_prefs_do_not_disturb_start" android:key="display_on_lift_start" android:defaultValue="00:00"/>
+        <nodomain.freeyourgadget.gadgetbridge.util.XTimePreference android:title="@string/mi2_prefs_do_not_disturb_end" android:key="display_on_lift_end" android:defaultValue="00:00"/>
+    </PreferenceScreen>
+</androidx.preference.PreferenceScreen>

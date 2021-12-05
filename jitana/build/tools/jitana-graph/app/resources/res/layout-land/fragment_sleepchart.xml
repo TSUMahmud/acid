@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:id="@+id/sleepchart_info" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="90"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="10">
+        <com.github.mikephil.charting.charts.PieChart android:id="@+id/sleepchart_pie_light_deep" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="40"/>
+        <com.github.mikephil.charting.charts.LineChart android:id="@+id/sleepchart" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="20"/>
+    </LinearLayout>
+</LinearLayout>

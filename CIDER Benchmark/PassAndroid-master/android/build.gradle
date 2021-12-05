@@ -1,0 +1,198 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.trevjonez.composer'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'de.mobilej.unmock'
+
+repositories {
+    jcenter()
+    mavenCentral()
+    google()
+    maven { url 'https://www.jitpack.io' }
+}
+
+android {
+
+    compileSdkVersion 30
+
+    defaultConfig {
+        versionCode 357
+        versionName "3.5.7"
+        minSdkVersion 14
+        targetSdkVersion 30
+        applicationId "org.ligi.passandroid"
+        testInstrumentationRunner "org.ligi.passandroid.AppReplacingRunner"
+        archivesBaseName = "PassAndroid-$versionName"
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    flavorDimensions "maps", "analytics", "distribution"
+
+    productFlavors {
+
+        withMaps {
+            dimension "maps"
+        }
+
+        noMaps {
+            dimension "maps"
+        }
+
+        withAnalytics {
+            dimension "analytics"
+        }
+
+        noAnalytics {
+            dimension "analytics"
+        }
+
+        forFDroid {
+            dimension "distribution"
+        }
+
+        forPlay {
+            dimension "distribution"
+        }
+        forAmazon {
+            dimension "distribution"
+        }
+
+    }
+
+    android.variantFilter { variant ->
+        def maps = variant.getFlavors().get(0).name
+        def analytics = variant.getFlavors().get(1).name
+        def distribution = variant.getFlavors().get(2).name
+
+        variant.setIgnore((project.hasProperty("singleFlavor") && (distribution != 'forPlay'))
+                || ((distribution == 'forAmazon' || distribution == 'forPlay') && analytics == 'noAnalytics')
+                || ((distribution == 'forAmazon' || distribution == 'forPlay') && maps == 'noMaps')
+                || (distribution == 'forFDroid' && analytics == 'withAnalytics')
+                || (distribution == 'forFDroid' && maps == 'withMaps'))
+    }
+
+    packagingOptions {
+        // needed for assertJ
+        exclude 'asm-license.txt'
+        exclude 'LICENSE'
+        exclude 'NOTICE'
+
+        // hack for instrumentation testing :-(
+        exclude 'LICENSE.txt'
+
+        exclude 'META-INF/maven/com.google.guava/guava/pom.properties'
+        exclude 'META-INF/maven/com.google.guava/guava/pom.xml'
+        exclude 'META-INF/lib_release.kotlin_module'
+    }
+
+    lintOptions {
+        warning 'MissingTranslation'
+        warning 'InvalidPackage'
+        disable "NullSafeMutableLiveData"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+        }
+
+        debug {
+            multiDexEnabled true
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
+}
+
+dependencies {
+    implementation 'org.permissionsdispatcher:permissionsdispatcher:4.8.0'
+    kapt 'org.permissionsdispatcher:permissionsdispatcher-processor:4.8.0'
+
+    implementation "org.koin:koin-android:2.2.2"
+
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.3"
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.2.0'
+
+    androidTestImplementation 'com.github.ligi:trulesk:4.0'
+    androidTestUtil 'com.linkedin.testbutler:test-butler-app:2.1.1'
+
+    androidTestImplementation 'androidx.test:core:1.3.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.3.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-intents:3.3.0'
+    androidTestImplementation 'com.squareup.assertj:assertj-android:1.2.0'
+    androidTestImplementation "org.mockito:mockito-core:$mockito_version"
+    androidTestImplementation 'com.linkedin.dexmaker:dexmaker-mockito:2.28.1'
+    androidTestImplementation 'com.google.code.findbugs:jsr305:3.0.2'
+    androidTestImplementation "org.threeten:threetenbp:$threetenbp_version"
+    androidTestImplementation 'com.android.support:multidex:1.0.3'
+
+
+    implementation 'com.github.ligi:TouchImageView:2.1'
+    implementation 'com.github.ligi:ExtraCompats:1.0'
+    implementation 'net.lingala.zip4j:zip4j:2.7.0'
+    implementation 'com.jakewharton.threetenabp:threetenabp:1.3.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.preference:preference:1.1.1'
+    implementation 'androidx.annotation:annotation:1.2.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'androidx.fragment:fragment-ktx:1.3.2'
+    implementation 'androidx.webkit:webkit:1.4.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'net.i2p.android.ext:floatingactionbutton:1.10.1'
+
+    implementation 'com.github.ligi:KAXT:1.0'
+    implementation 'com.github.ligi:KAXTUI:1.0'
+    implementation 'com.github.ligi:loadtoast:1.10.11'
+
+    implementation 'com.github.ligi:tracedroid:4.1'
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+
+    forPlayImplementation 'com.github.ligi.snackengage:snackengage-playrate:0.28'
+    forFDroidImplementation 'com.github.ligi.snackengage:snackengage-playrate:0.28'
+    forAmazonImplementation 'com.github.ligi.snackengage:snackengage-amazonrate:0.28'
+
+    // https://medium.com/square-corner-blog/okhttp-3-13-requires-android-5-818bb78d07ce
+    // Don't update to >=3.13 before minSDK 21 + Java 8
+    //noinspection GradleDependency
+    implementation 'com.squareup.okhttp3:okhttp:3.12.12'
+
+    implementation 'com.larswerkman:HoloColorPicker:1.5'
+    implementation 'com.google.code.findbugs:jsr305:3.0.2'
+
+    implementation 'com.squareup.okio:okio:2.9.0'
+
+    implementation 'com.squareup.moshi:moshi:1.12.0'
+    kapt "com.squareup.moshi:moshi-kotlin-codegen:1.12.0"
+
+    implementation "com.chibatching.kotpref:kotpref:$kotpref_version"
+    implementation "com.chibatching.kotpref:initializer:$kotpref_version"
+    testImplementation 'com.squareup.assertj:assertj-android:1.2.0'
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation "org.mockito:mockito-core:$mockito_version"
+    testImplementation "org.threeten:threetenbp:$threetenbp_version"
+
+    // https://github.com/ligi/PassAndroid/issues/181
+    // Don't upgrade before minSDK 19 - or replace zxing
+    //noinspection GradleDependency
+    implementation 'com.google.zxing:core:3.3.0'
+
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.7'
+
+    // requires minSDK 16 according to docs, not sure if it causes an issue
+    withAnalyticsImplementation 'com.google.android.gms:play-services-analytics:17.0.0'
+    withMapsImplementation 'com.google.android.gms:play-services-maps:17.0.0'
+}

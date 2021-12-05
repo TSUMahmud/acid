@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <ListPreference android:icon="@drawable/ic_language" android:entries="@array/pref_amazfitbip_language" android:title="@string/pref_title_language" android:key="language" android:summary="%s" android:defaultValue="auto" android:entryValues="@array/pref_amazfitbip_language_values"/>
+</androidx.preference.PreferenceScreen>

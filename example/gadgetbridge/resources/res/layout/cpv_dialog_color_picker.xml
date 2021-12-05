@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.jaredrummler.android.colorpicker.ColorPickerView android:id="@+id/cpv_color_picker_view" android:padding="16dp" style="@style/cpv_ColorPickerViewStyle"/>
+        <LinearLayout android:orientation="horizontal" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.jaredrummler.android.colorpicker.ColorPanelView android:id="@+id/cpv_color_panel_old" android:layout_width="@dimen/cpv_dialog_preview_width" android:layout_height="@dimen/cpv_dialog_preview_height" app:cpv_colorShape="0"/>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/cpv_arrow_right" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cpv_ic_arrow_right_black_24dp"/>
+            <com.jaredrummler.android.colorpicker.ColorPanelView android:id="@+id/cpv_color_panel_new" android:layout_width="@dimen/cpv_dialog_preview_width" android:layout_height="@dimen/cpv_dialog_preview_height" app:cpv_colorShape="0"/>
+            <Space android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+            <LinearLayout android:gravity="right" android:orientation="horizontal" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp">
+                <TextView android:typeface="monospace" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="#"/>
+                <EditText android:typeface="monospace" android:id="@+id/cpv_hex" android:focusable="true" android:layout_width="110dp" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="8" android:digits="0123456789ABCDEFabcdef" android:inputType="textNoSuggestions" android:imeOptions="actionGo"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

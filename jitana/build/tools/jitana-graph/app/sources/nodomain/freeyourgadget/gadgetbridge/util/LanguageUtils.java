@@ -1,0 +1,280 @@
+package nodomain.freeyourgadget.gadgetbridge.util;
+
+import java.text.Normalizer;
+import java.util.HashMap;
+import java.util.Map;
+import nodomain.freeyourgadget.gadgetbridge.GBApplication;
+import nodomain.freeyourgadget.gadgetbridge.devices.miband.MiBandConst;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.text.WordUtils;
+import p005ch.qos.logback.classic.spi.CallerData;
+import p005ch.qos.logback.core.rolling.helper.DateTokenConverter;
+import p005ch.qos.logback.core.rolling.helper.IntegerTokenConverter;
+
+public class LanguageUtils {
+    private static Map<Character, String> transliterateMap = new HashMap<Character, String>() {
+        {
+            put(339, "oe");
+            put(170, "a");
+            put(186, "o");
+            put(171, "\"");
+            put(187, "\"");
+            put(198, "Ae");
+            put(230, "ae");
+            put(216, "Oe");
+            put(248, "oe");
+            put(197, "Aa");
+            put(229, "aa");
+            put(228, "ae");
+            put(246, "oe");
+            put(252, "ue");
+            put(196, "Ae");
+            put(214, "Oe");
+            put(220, "Üe");
+            put(223, "ss");
+            put(7838, "SS");
+            put(1072, "a");
+            put(1073, "b");
+            put(1074, "v");
+            put(1075, "g");
+            put(1076, DateTokenConverter.CONVERTER_KEY);
+            put(1077, "e");
+            put(1105, "jo");
+            put(1078, "zh");
+            put(1079, "z");
+            put(1080, IntegerTokenConverter.CONVERTER_KEY);
+            put(1081, "jj");
+            put(1082, "k");
+            put(1083, "l");
+            put(1084, "m");
+            put(1085, "n");
+            put(1086, "o");
+            put(1087, "p");
+            put(1088, "r");
+            put(1089, "s");
+            put(1090, "t");
+            put(1091, "u");
+            put(1092, "f");
+            put(1093, "kh");
+            put(1094, "c");
+            put(1095, "ch");
+            put(1096, "sh");
+            put(1097, "shh");
+            put(1098, "\"");
+            put(1099, "y");
+            put(1100, "'");
+            put(1101, "eh");
+            put(1102, "ju");
+            put(1103, "ja");
+            put(1488, "a");
+            put(1489, "b");
+            put(1490, "g");
+            put(1491, DateTokenConverter.CONVERTER_KEY);
+            put(1492, "h");
+            put(1493, "u");
+            put(1494, "z");
+            put(1495, "kh");
+            put(1496, "t");
+            put(1497, "y");
+            put(1499, "c");
+            put(1500, "l");
+            put(1502, "m");
+            put(1504, "n");
+            put(1505, "s");
+            put(1506, "'");
+            put(1508, "p");
+            put(1510, "ts");
+            put(1511, "k");
+            put(1512, "r");
+            put(1513, "sh");
+            put(1514, "th");
+            put(1507, "f");
+            put(1509, "ts");
+            put(1498, "ch");
+            put(1501, "m");
+            put(1503, "n");
+            put(945, "a");
+            put(940, "a");
+            put(946, "v");
+            put(947, "g");
+            put(948, DateTokenConverter.CONVERTER_KEY);
+            put(949, "e");
+            put(941, "e");
+            put(950, "z");
+            put(951, IntegerTokenConverter.CONVERTER_KEY);
+            put(942, IntegerTokenConverter.CONVERTER_KEY);
+            put(952, "th");
+            put(953, IntegerTokenConverter.CONVERTER_KEY);
+            put(943, IntegerTokenConverter.CONVERTER_KEY);
+            put(970, IntegerTokenConverter.CONVERTER_KEY);
+            put(912, IntegerTokenConverter.CONVERTER_KEY);
+            put(954, "k");
+            put(955, "l");
+            put(956, "m");
+            put(957, "n");
+            put(958, "ks");
+            put(959, "o");
+            put(972, "o");
+            put(960, "p");
+            put(961, "r");
+            put(963, "s");
+            put(962, "s");
+            put(964, "t");
+            put(965, "y");
+            put(973, "y");
+            put(971, "y");
+            put(944, "y");
+            put(966, "f");
+            put(967, "ch");
+            put(968, "ps");
+            put(969, "o");
+            put(974, "o");
+            put(913, "A");
+            put(902, "A");
+            put(914, "B");
+            put(915, "G");
+            put(916, "D");
+            put(917, "E");
+            put(904, "E");
+            put(918, "Z");
+            put(919, "I");
+            put(905, "I");
+            put(920, "TH");
+            put(921, "I");
+            put(906, "I");
+            put(938, "I");
+            put(922, "K");
+            put(923, "L");
+            put(924, "M");
+            put(925, "N");
+            put(926, "KS");
+            put(927, "O");
+            put(908, "O");
+            put(928, "P");
+            put(929, "R");
+            put(931, "S");
+            put(932, "T");
+            put(933, "Y");
+            put(910, "Y");
+            put(939, "Y");
+            put(934, "F");
+            put(935, "CH");
+            put(936, "PS");
+            put(937, "O");
+            put(911, "O");
+            put(1169, "gh");
+            put(1108, "je");
+            put(1110, IntegerTokenConverter.CONVERTER_KEY);
+            put(1111, "ji");
+            put(1168, "GH");
+            put(1028, "JE");
+            put(1030, "I");
+            put(1031, "JI");
+            put(1575, "a");
+            put(1576, "b");
+            put(1578, "t");
+            put(1579, "th");
+            put(1580, "j");
+            put(1581, "7");
+            put(1582, "5");
+            put(1583, DateTokenConverter.CONVERTER_KEY);
+            put(1584, "th");
+            put(1585, "r");
+            put(1586, "z");
+            put(1587, "s");
+            put(1588, "sh");
+            put(1589, "9");
+            put(1590, "9'");
+            put(1591, "6");
+            put(1592, "6'");
+            put(1593, "3");
+            put(1594, "3'");
+            put(1601, "f");
+            put(1602, "q");
+            put(1603, "k");
+            put(1604, "l");
+            put(1605, "m");
+            put(1606, "n");
+            put(1607, "h");
+            put(1608, "w");
+            put(1610, "y");
+            put(1609, "a");
+            put(65171, "");
+            put(1570, MiBandConst.MI_PRO);
+            put(1574, MiBandConst.MI_PRO);
+            put(1573, MiBandConst.MI_PRO);
+            put(1572, MiBandConst.MI_PRO);
+            put(1571, MiBandConst.MI_PRO);
+            put(1569, MiBandConst.MI_PRO);
+            put(1662, "p");
+            put(1670, "ch");
+            put(1688, "zh");
+            put(1705, "k");
+            put(1711, "g");
+            put(1740, "y");
+            put(8204, StringUtils.SPACE);
+            put(1567, CallerData.f49NA);
+            put(1642, "%");
+            put(1563, ";");
+            put(1548, ",");
+            put(1777, MiBandConst.MI_1);
+            put(1778, MiBandConst.MI_PRO);
+            put(1779, "3");
+            put(1780, "4");
+            put(1781, "5");
+            put(1782, "6");
+            put(1783, "7");
+            put(1784, "8");
+            put(1785, "9");
+            put(1776, "0");
+            put(187, "<");
+            put(171, ">");
+            put(1616, "e");
+            put(1614, "a");
+            put(1615, "o");
+            put(1617, "");
+            put(321, "L");
+            put(322, "l");
+            put(261, "a");
+            put(269, "c");
+            put(281, "e");
+            put(279, "e");
+            put(303, IntegerTokenConverter.CONVERTER_KEY);
+            put(353, "s");
+            put(371, "u");
+            put(363, "u");
+            put(382, "z");
+        }
+    };
+
+    public static boolean transliterate() {
+        return GBApplication.getPrefs().getBoolean("transliteration", false);
+    }
+
+    public static String transliterate(String txt) {
+        if (txt == null || txt.isEmpty()) {
+            return txt;
+        }
+        StringBuilder message = new StringBuilder();
+        for (char c : txt.toCharArray()) {
+            message.append(transliterate(c));
+        }
+        return flattenToAscii(BengaliLanguageUtils.transliterate(message.toString()));
+    }
+
+    private static String transliterate(char c) {
+        char lowerChar = Character.toLowerCase(c);
+        if (!transliterateMap.containsKey(Character.valueOf(lowerChar))) {
+            return String.valueOf(c);
+        }
+        String replace = transliterateMap.get(Character.valueOf(lowerChar));
+        if (lowerChar != c) {
+            return WordUtils.capitalize(replace);
+        }
+        return replace;
+    }
+
+    private static String flattenToAscii(String string) {
+        return Normalizer.normalize(string, Normalizer.Form.NFD).replaceAll("\\p{M}", "");
+    }
+}

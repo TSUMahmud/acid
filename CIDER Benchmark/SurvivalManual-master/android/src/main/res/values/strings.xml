@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">Survival Manual</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <string name="introduction">Introduction</string>
+    <string name="share">Share</string>
+    <string name="rate">Rate</string>
+    <string name="print">Print</string>
+    <string name="print_all">Print (All)</string>
+    <string name="psychology">Psychology</string>
+    <string name="planning">Planning</string>
+    <string name="basic_medicine">Basic Medicine</string>
+    <string name="shelter">Shelter</string>
+    <string name="water">Water</string>
+    <string name="fire">Fire</string>
+    <string name="food">Food</string>
+    <string name="plants">Plants</string>
+    <string name="poisonous_plants">Poisonous Plants</string>
+    <string name="animals">Animals</string>
+    <string name="tools">Tools</string>
+    <string name="desert">Desert</string>
+    <string name="tropical">Tropical</string>
+    <string name="cold">Cold</string>
+    <string name="sea">Sea</string>
+    <string name="water_crossing">Water Crossing</string>
+    <string name="directionfinding">Find Direction</string>
+    <string name="signaling">Signaling</string>
+    <string name="camouflage">Camouflage</string>
+    <string name="people">People</string>
+    <string name="man_made_hazards">Man-Made Hazards</string>
+    <string name="self_defense">Self defense</string>
+    <string name="credits">Credits</string>
+    <string name="evasion_plan">Evasion Plan</string>
+    <string name="clouds">Clouds</string>
+    <string name="faq">FAQ</string>
+    <string name="ropes_and_knots">Ropes and Knots</string>
+    <string name="fish_and_mollusks">Fish and Mollusks</string>
+    <string name="insects_and_arachnids">Insects and Arachnids</string>
+    <string name="snakes_and_lizards">Snakes and Lizards</string>
+    <string name="edible_medicinal_plants">Edible/Medicinal Plants</string>
+    <string name="apps">Apps</string>
+    <string name="multitool">Multitool</string>
+    <string name="kits">Kits</string>
+    <string name="appendix">Appendix</string>
+    <string name="help_title">Help</string>
+    <string name="hostile_areas">Hostile Areas</string>
+    <string name="help_text">
+        <![CDATA[
+        This is the offline usable survival field manual v$VERSION based on FM 3-05.70 (FM 21-76). This app is libre software - you can find the sourcecode on
+        <a href="https://github.com/ligi/SurvivalManual">GitHub</a>. Pull-Requests are welcome!<br/>
+        If you have improvements regarding the content or want to help translate you can use <a href="https://github.com/ligi/SurvivalManual/wiki">this wiki.</a><br/>
+        If you want the latest features and like to live on the bleeding edge, <a href="https://play.google.com/apps/testing/org.ligi.survivalmanual">join the beta testers.</a>
+        <br/>
+        This app uses the android-support-libraries,
+        <a href="http://kotlinlang.org">Kotlin</a>,
+        <a href="https://github.com/MichaelRocks/bimap/">BiMap</a>,
+        <a href="https://github.com/chibatching/Kotpref">KotPref</a>,
+        <a href="https://github.com/rjeschke/txtmark">TxtMark</a>
+        and <a href="https://github.com/ligi/SnackEngage">SnackEngage</a>
+        ]]>
+    </string>
+    <string name="system">System</string>
+    <string name="night">Night</string>
+    <string name="dark_night">Dark Night</string>
+    <string name="day">Day</string>
+
+    <string name="tiny">Tiny</string>
+    <string name="small">Small</string>
+    <string name="medium">Medium</string>
+    <string name="large">Large</string>
+    <string name="huge">Huge</string>
+
+    <string name="preference_daynight_title">Day/Night theme</string>
+    <string name="preference_daynight_summary">Should I use day or night theme?</string>
+
+    <string name="allow_edit">Allow Editing (Experimental)</string>
+    <string name="allow_search">Search (Beta)</string>
+    <string name="preference_fontsize_summary">How big should the letters be?</string>
+    <string name="preference_fontsize_title">Text size</string>
+    <string name="power">Power</string>
+    <string name="translator_notes">Translator Notes</string>
+    <string name="product_link_disclaimer">You clicked on a product link. They help support this app because they are affiliate links from Amazon. If you buy this product or something else on Amazon behind this link, then I should get some money from them.</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="amazon_link_title">Amazon Link</string>
+    <string name="cancel">Cancel</string>
+    <string name="to_amazon">To Amazon</string>
+    <string name="send_link">Send Link</string>
+    <string name="add_bookmark">Add Bookmark</string>
+
+    <string name="search">Search</string>
+    <string name="settings">Settings</string>
+
+</resources>

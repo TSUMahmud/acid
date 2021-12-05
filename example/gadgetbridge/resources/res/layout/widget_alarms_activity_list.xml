@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:id="@+id/alarm_list_top_layout" android:background="@color/primary_dark" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/todaywidget_header_container" android:background="@color/accent" android:layout_width="match_parent" android:layout_height="40dp" android:baselineAligned="false">
+        <LinearLayout android:gravity="start" android:id="@+id/todaywidget_header_bar" android:paddingLeft="0dp" android:paddingRight="0dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="14sp" android:textColor="@color/primarytext_dark" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/todaywidget_alarm_list_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:text="@string/widget_set_alarm_after" android:maxLines="1" android:drawablePadding="4dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/todaywidget_alarm_list_bottom_layout" android:paddingLeft="10dp" android:paddingRight="10dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="30sp" android:id="@+id/alarm1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/widget_5_minutes" android:onClick="onClick"/>
+        <TextView android:textSize="30sp" android:id="@+id/alarm2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/widget_10_minutes" android:onClick="onClick"/>
+        <TextView android:textSize="30sp" android:id="@+id/alarm3" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/widget_20_minutes" android:onClick="onClick"/>
+        <TextView android:textSize="30sp" android:id="@+id/alarm4" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/widget_1_hour" android:onClick="onClick"/>
+        <TextView android:textSize="30sp" android:id="@+id/alarm5" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/miband_prefs_fitness_goal" android:onClick="onClick"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="widget_alarm_target_hours">
+        <item quantity="other">%d 小时</item>
+    </plurals>
+</resources>

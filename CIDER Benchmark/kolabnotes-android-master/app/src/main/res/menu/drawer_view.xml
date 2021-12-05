@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/drawer_navigation"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/all_notes"
+            android:icon="@drawable/ic_action_group"
+            android:title="@string/drawer_item_allaccount_notes" />
+        <item
+            android:id="@+id/all_notes_from_account"
+            android:icon="@drawable/ic_action_person"
+            android:title="@string/drawer_item_allnotes" />
+        <item
+            android:id="@+id/navigation_tags"
+            android:icon="@drawable/ic_action_labels"
+            android:enabled="false"
+            android:title="@string/drawer_item_tags">
+            <menu>
+                <!-- will be filled at runtime -->
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/navigation_notebooks"
+            android:icon="@drawable/ic_action_collection"
+            android:enabled="false"
+            android:title="@string/drawer_item_notebooks">
+            <menu>
+                <!-- will be filled at runtime -->
+            </menu>
+        </item>
+    </group>
+    <group
+        android:id="@+id/drawer_accounts"
+        android:visible="false"
+        android:checkableBehavior="none">
+        <!-- will be filled at runtime -->
+    </group>
+</menu>

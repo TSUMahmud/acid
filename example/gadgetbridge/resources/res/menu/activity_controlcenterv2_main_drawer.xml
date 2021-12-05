@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:id="@+id/applicaction_options" android:checkableBehavior="single">
+        <item android:icon="@drawable/ic_settings" android:id="@+id/action_settings" android:title="@string/action_settings"/>
+        <item android:icon="@drawable/ic_debug" android:id="@+id/action_debug" android:title="@string/action_debug"/>
+        <item android:icon="@drawable/ic_database_management" android:id="@+id/action_db_management" android:title="@string/action_db_management"/>
+        <item android:icon="@drawable/ic_block_black" android:id="@+id/action_blacklist" android:title="@string/title_activity_appblacklist"/>
+        <item android:icon="@drawable/ic_add" android:id="@+id/device_action_discover" android:title="@string/action_discover"/>
+        <item android:icon="@drawable/ic_quit" android:id="@+id/action_quit" android:title="@string/action_quit"/>
+    </group>
+    <group android:id="@+id/further_options" android:checkableBehavior="single">
+        <item android:icon="@drawable/ic_donate" android:id="@+id/donation_link" android:title="@string/action_donate"/>
+        <item android:icon="@drawable/ic_history_black" android:id="@+id/external_changelog" android:title="@string/changelog_full_title"/>
+    </group>
+</menu>
